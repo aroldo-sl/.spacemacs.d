@@ -1,0 +1,45 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+((".spacemacs.d"
+ (filename . "~/.spacemacs.d/")
+ (front-context-string . ".cache\n  drwxrwx")
+ (rear-context-string . "96 Mai 31 15:59 ")
+ (position . 197))
+("Downloads"
+ (filename . "~/Downloads/")
+ (front-context-string . "50-F02_Antrag_Ko")
+ (rear-context-string . "10 Mai 31 16:13 ")
+ (position . 206))
+("Dokumente"
+ (filename . "~/Dokumente/")
+ (front-context-string)
+ (rear-context-string . "Mai 31 12:51 ..\n")
+ (position . 142))
+("download-batch.txt"
+ (filename . "~/Videos/YT/download-batch.txt")
+ (front-context-string)
+ (rear-context-string . "h?v=zF_hoBORgdI\n")
+ (position . 842))
+("YT"
+ (filename . "~/Videos/YT/")
+ (front-context-string . "Berlin_Live_2021")
+ (rear-context-string . "96 Mai 25 22:35 ")
+ (position . 192))
+("init.el"
+ (filename . "~/.spacemacs.d/init.el")
+ (front-context-string . ")\n\n\n   ;; List o")
+ (rear-context-string . "s\n     yasnippet")
+ (position . 2296))
+(".emacs.d"
+ (filename . "~/.emacs.d/")
+ (front-context-string . ".cache\n  drwxrwx")
+ (rear-context-string . "96 Mai 31 16:17 ")
+ (position . 197))
+("dotspace"
+ (filename . "~/.spacemacs.d/")
+ (front-context-string . "bookmarks\n  -rw-")
+ (rear-context-string . "96 Mai 14 19:02 ")
+ (position . 204))
+)

@@ -1,0 +1,12 @@
+#+title: 
+#+date: `(format-time-string "%FT%H-%M-%S")`
+#+author: `(getenv "USER")`
+#+email:  asouzaleite@gmx.de
+#+export_select_tags: export
+#+export_exclude_tags: noexport
+#+startup: showall
+# BEGIN CONTENT
+
+# END CONTENT
+
+

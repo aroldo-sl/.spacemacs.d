@@ -1,0 +1,45 @@
+#+TITLE: asl_00 layer
+# Document tags are separated with "|" char
+# The example below contains 2 tags: "layer" and "web service"
+# Avaliable tags are listed in <spacemacs_root>/.ci/spacedoc-cfg.edn
+# under ":spacetools.spacedoc.config/valid-tags" section.
+#+TAGS: layer|web service
+
+# The maximum height of the logo should be 200 pixels.
+[[img/asl_küchenschrank.png]]
+
+# TOC links should be GitHub style anchors.
+* Table of Contents                                        :TOC_4_gh:noexport:
+- [[#description][Description]]
+  - [[#features][Features:]]
+- [[#install][Install]]
+- [[#key-bindings][Key bindings]]
+
+* Description
+Der neue Küchenschrank der fleißigen Oma nach dem Umzug von Vanilla-Emacs nach Spacemacs.
+Mit vielen gut erhaltenen und jetzt renovierten Utensilien aus dem alten Küchenschrak.
+Dazu kommen neue, moderne Geräte. 
+Alles aber hoffentlich im neuen Spacemacs-Stil organisiert.
+
+** Features:
+  - Autocomplete
+  - Lint
+  - Refactor
+  - ...
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =asl_küchenschrank= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+* Key bindings
+
+| Key Binding | Description    |
+|-------------+----------------|
+| ~SPC x x x~ | Does thing01   |
+
+# Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
+# Examples:
+# [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]
+# [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bfun/emoji/README.org][Link to Emoji layer README.org]]
+# If space-doc-mode is enabled, Spacemacs will open a local copy of the linked file.

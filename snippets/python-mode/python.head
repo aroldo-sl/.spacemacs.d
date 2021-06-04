@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Python head
+# key: head
+# --
+#!/usr/bin/env python
+"""
+Module docstring.
+"""

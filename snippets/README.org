@@ -1,0 +1,12 @@
+#+title: .spacemacs.d/snippes
+#+date: 2021-06-04T12-37-41
+#+author: aroldo
+#+email:  asouzaleite@gmx.de
+#+export_select_tags: export
+#+export_exclude_tags: noexport
+#+startup: showall
+# BEGIN CONTENT
+
+# END CONTENT
+
+
