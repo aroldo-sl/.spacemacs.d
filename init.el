@@ -41,7 +41,10 @@ This function should only modify configuration layer settings."
      ;; auto-completion
      ;; better-defaults
      emacs-lisp
-     git
+     (git :variables
+          git-magit-status-fullscreen t
+          git-enable-magit-svn-plugin t
+          global-git-commit-mode t)
      helm
      ;; lsp
      ;; markdown
