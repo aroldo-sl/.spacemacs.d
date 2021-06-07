@@ -1,4 +1,4 @@
-;;; user-config.el --- This is the sourced out dotspacemacs/user-config() in init.el (the dotspacemacs file)  -*- lexical-binding: t; -*-
+;;; user-config.el --- This is the sourced out dotspacemacs/user-config() in init.el (the dotspacemacs file)  -*- lexical-binding: t; buffer-read-only: t-*- 
 
 ;; Copyright (C) 2021  Aroldo Souza-Leite
 
@@ -118,6 +118,7 @@ before packages are loaded."
   (setq yas-snippet-private-directory
         (concat spacemacs-private-directory "snippets/"))
   (add-to-list 'yas-snippet-dirs yas-snippet-private-directory)
+  (global-set-key [(f12) (insertchar)] 'yas-insert-snippet)
   ;;; </yasnippet>
   ;;; <python>
   (add-hook
