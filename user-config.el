@@ -132,6 +132,12 @@ before packages are loaded."
    'dired-mode-hook
    '(lambda()(dired-hide-details-mode)))
   ;;; </dired>
+  ;;; <magit>
+  (define-prefix-command 'magit-)
+  (global-set-key [(f12) (\#)] magit-)
+  (global-set-key [(f12) (\#) (\#)] 'magit-status)
+  ;;; </magit> 
+
 )
 (-user-config)
 ;;

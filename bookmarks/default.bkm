@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-((".spacemacs.d"
+(("devel"
+ (filename . "~/devel/")
+ (front-context-string . "Bash-examples\n  ")
+ (rear-context-string . "96 Mai 25 12:16 ")
+ (position . 187))
+(".spacemacs.d"
  (filename . "~/.spacemacs.d/")
  (front-context-string . ".cache\n  drwxrwx")
  (rear-context-string . "96 Mai 31 15:59 ")
