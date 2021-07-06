@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("templates"
+(("about-org-mode"
+ (filename . "~/devel/about-org-mode/")
+ (front-context-string . "from-template.or")
+ (rear-context-string . "33 Mai 26 20:12 ")
+ (position . 550))
+("layers"
+ (filename . "~/.spacemacs.d/layers/")
+ (front-context-string . "asl_00\n  drwxrwx")
+ (rear-context-string . "96 Jun  4 12:29 ")
+ (position . 201))
+("templates"
  (filename . "~/.spacemacs.d/templates/")
  (front-context-string . "10:test_.*.py\n  ")
  (rear-context-string . "61 Jun  4 12:29 ")
