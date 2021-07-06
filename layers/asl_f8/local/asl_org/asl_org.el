@@ -23,7 +23,7 @@
        (key-map org-mode-map)
        (bindings '(
                    (asl_org/ [(f8)]        )
-                   (asl_org/bullets     [(f8) (f8)])
+                   (asl_org/bullets     [(f8) (-)])
                    (asl_org/store-link [(f8) (l)]    )
                    (asl_org/agenda [(f8) (a)]        )
                    (asl_org/capture [(f8) (c)]       )
