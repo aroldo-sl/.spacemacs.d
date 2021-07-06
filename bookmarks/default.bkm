@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-((".spacemacs.d-old"
+(("templates"
+ (filename . "~/.spacemacs.d/templates/")
+ (front-context-string . "10:test_.*.py\n  ")
+ (rear-context-string . "61 Jun  4 12:29 ")
+ (position . 204))
+("home"
+ (filename . "~/")
+ (front-context-string . "Musiksammlung ->")
+ (rear-context-string . "41 Jun 21 15:16 ")
+ (position . 1720))
+(".spacemacs.d-old"
  (filename . "/home/emoritz/devel/emacs-old/spacemacs/.spacemacs.d/")
  (front-context-string . ".cache\n  -rw-rw-")
  (rear-context-string . "96 Mai 25 19:07 ")
