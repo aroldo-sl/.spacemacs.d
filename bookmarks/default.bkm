@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("about-org-mode"
+(("Briefe-TeX"
+ (filename . "~/devel/unterlagen-devel/Briefe-TeX/")
+ (front-context-string . "2018-01-03-sozia")
+ (rear-context-string . "64 Jul 21 13:49 ")
+ (position . 222))
+("tmp"
+ (filename . "~/tmp/")
+ (front-context-string . "feuchtigkeit.txt")
+ (rear-context-string . "31 Jun  7 21:13 ")
+ (position . 299))
+("about-org-mode"
  (filename . "~/devel/about-org-mode/")
  (front-context-string . "from-template.or")
  (rear-context-string . "33 Mai 26 20:12 ")
