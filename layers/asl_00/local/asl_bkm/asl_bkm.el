@@ -26,6 +26,7 @@
 (defalias 'asl_bkm/set 'bookmark-set)
 (defalias 'asl_bkm/list-helm 'helm-filtered-bookmarks)
 (defalias 'asl_bkm/list 'bookmark-bmenu-list)
+(defalias 'asl_bkm/jump 'bookmark-jump)
 ;; ;;; </bookmark-aliases>
 
 ;; ;;; <bookmark-keys>
@@ -36,6 +37,7 @@
                   (asl_bkm/set               [(f6) (s)])
                   (asl_bkm/list-helm         [(f6) (h)])
                   (asl_bkm/list              [(f6) (l)])
+                  (asl_bkm/jump              [(f6) (j)])
                   )))
   (loop for (fn key) in bindings do (progn
                                          (global-set-key key fn))))

@@ -1,8 +1,13 @@
-;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("about-org-mode"
+(("gui-examples"
+ (filename . "~/devel/Stammheim/gui/")
+ (front-context-string . "pythongui.py\n  d")
+ (rear-context-string . "29 Jul 26 16:01 ")
+ (position . 148))
+("about-org-mode"
  (filename . "~/devel/about-org-mode/")
  (front-context-string . "from-template.or")
  (rear-context-string . "33 Mai 26 20:12 ")

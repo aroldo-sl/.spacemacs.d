@@ -146,6 +146,9 @@ before packages are loaded."
   (define-key rst-mode-map [(f8) (t)]     'rst-toc)
   (define-key rst-mode-map [(f8) (f8)]    'rst-compile)
   ;;; ;; </rst>
+  ;;; ;; <hs>
+  (define-key key-translation-map [(f5) (h)] [(control c) (\@) (control e)])
+  ;;; ;; </hs>
 )
 (-user-config)
 ;;

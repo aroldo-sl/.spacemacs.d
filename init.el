@@ -60,6 +60,8 @@ This function should only modify configuration layer settings."
      treemacs
      templates
      python
+     xml
+     json
      ;; ;; private layers
      asl_00
      asl_f8
