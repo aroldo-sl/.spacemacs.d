@@ -1,17 +1,17 @@
-;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Briefe-TeX"
- (filename . "~/devel/unterlagen-devel/Briefe-TeX/")
- (front-context-string . "2018-01-03-sozia")
- (rear-context-string . "64 Jul 21 13:49 ")
- (position . 222))
-("tmp"
- (filename . "~/tmp/")
- (front-context-string . "feuchtigkeit.txt")
- (rear-context-string . "31 Jun  7 21:13 ")
- (position . 299))
+(("sysadmin"
+ (filename . "~/devel/sysadmin/")
+ (front-context-string . ".git\n  -rw-rw-r-")
+ (rear-context-string . "96 Okt 16 13:04 ")
+ (position . 196))
+("gui-examples"
+ (filename . "~/devel/Stammheim/gui/")
+ (front-context-string . "pythongui.py\n  d")
+ (rear-context-string . "29 Jul 26 16:01 ")
+ (position . 148))
 ("about-org-mode"
  (filename . "~/devel/about-org-mode/")
  (front-context-string . "from-template.or")
@@ -32,11 +32,6 @@
  (front-context-string . "Musiksammlung ->")
  (rear-context-string . "41 Jun 21 15:16 ")
  (position . 1720))
-(".spacemacs.d-old"
- (filename . "/home/emoritz/devel/emacs-old/spacemacs/.spacemacs.d/")
- (front-context-string . ".cache\n  -rw-rw-")
- (rear-context-string . "96 Mai 25 19:07 ")
- (position . 227))
 ("devel"
  (filename . "~/devel/")
  (front-context-string . "Bash-examples\n  ")

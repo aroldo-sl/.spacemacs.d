@@ -1,4 +1,4 @@
-;;; asl_buff.el --- 
+;;; asl_buff.el ---
 
 ;; Copyright 2020 Aroldo Souza-Leite
 ;;
@@ -23,6 +23,7 @@
 
 ;; ;;; <als_buff-aliases>
 (defalias 'asl_buff/bury 'bury-buffer)
+(defalias 'asl_buff/server-edit 'server-edit)
 (defalias 'asl_buff/dired-jump 'dired-jump)
 (defalias 'asl_buff/erase 'erase-buffer)
 (defalias 'asl_buff/eval 'eval-buffer)
@@ -65,6 +66,7 @@
 (let ((bindings '(
   (asl_buff/ [(f5)])
   (asl_buff/bury [(f5) (K)])
+  (asl_buff/server-edit [(f5) (\#)])
   (asl_buff/dired-jump [(f5) (d)])
   (asl_buff/erase [(f5) (deletechar)])
   (asl_buff/eval [(f5) (e)])

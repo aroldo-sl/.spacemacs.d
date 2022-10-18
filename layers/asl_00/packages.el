@@ -36,7 +36,7 @@
     (asl_ln       :location local)
     (asl_rgn      :location local)
     (asl_rect     :location local)
-    (asl_find     :location local)
+    (asl_hs       :location local)
     ;; (breadcrumb   :location (recipe
     ;;                         :fetcher github
     ;;                         :repo pheaver/breadcrumb))
@@ -91,6 +91,9 @@ Each entry is either:
 
 (defun asl_00/init-asl_find()
   (use-package asl_find))
+
+(defun asl_00/init-asl_hs()
+  (use-package asl_hs))
 
 ;; (defun asl_00/init-asl_bc()
 ;;   (use-package asl_bc))
