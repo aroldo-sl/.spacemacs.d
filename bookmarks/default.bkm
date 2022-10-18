@@ -54,9 +54,9 @@
  (position . 206))
 ("Dokumente"
  (filename . "~/Dokumente/")
- (front-context-string)
- (rear-context-string . "Mai 31 12:51 ..\n")
- (position . 142))
+ (front-context-string . "Ausgabe.pdf\n  dr")
+ (rear-context-string . "03 Okt 11 14:20 ")
+ (position . 198))
 ("download-batch.txt"
  (filename . "~/Videos/YT/download-batch.txt")
  (front-context-string)
