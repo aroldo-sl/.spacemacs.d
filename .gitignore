@@ -2,4 +2,4 @@
 tmp
 *~
 #not working:# .cache
-/*.cache/
+/.cache/
