@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("gui-examples"
+(("sysadmin"
+ (filename . "~/devel/sysadmin/")
+ (front-context-string . ".git\n  -rw-rw-r-")
+ (rear-context-string . "96 Okt 16 13:04 ")
+ (position . 196))
+("gui-examples"
  (filename . "~/devel/Stammheim/gui/")
  (front-context-string . "pythongui.py\n  d")
  (rear-context-string . "29 Jul 26 16:01 ")
