@@ -10,6 +10,7 @@
 (defalias 'asl_org/forward                       'org-forward-heading-same-level)
 (defalias 'asl_org/backward                      'org-backward-heading-same-level)
 (defalias 'asl_org/jump                          'org-goto)
+(defalias 'asl_org/insert-heading-r-c            'org-insert-heading-respect-content)
 ;; ;;; </asl_org-aliases>
 
 ;; ;;; <asl_org-keys>
@@ -21,9 +22,11 @@
                    (asl_org/ [(f8)]        )
                    (asl_org/jump    [(f8) (j)]       )
                    (asl_org/next    [(f8) (down)]    )
+
                    (asl_org/previous [(f8) (up)]     )
                    (asl_org/forward [(f8) (next)]    )
                    (asl_org/backward [(f8) (prior)])
+                   (asl_org/insert-heading-r-c [(f8) (13)]) ;; 13=RET
                    ))
        )
   (loop for (fn key) in bindings do (progn 

@@ -1,4 +1,5 @@
 # aroldo-.spacemacs.d
 tmp
 *~
-#not working:# .cache 
+#not working:# .cache
+/*.cache/
