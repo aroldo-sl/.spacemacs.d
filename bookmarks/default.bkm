@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Briefe-TeX"
+(("tmp"
+ (filename . "~/tmp/")
+ (front-context-string)
+ (rear-context-string . "96 Okt 18 15:37 ")
+ (position . 185))
+("Briefe-TeX"
  (filename . "~/devel/unterlagen-devel/Briefe-TeX/")
  (front-context-string . "2021-07-21-lecks")
  (rear-context-string . "14 Jun  9 13:36 ")

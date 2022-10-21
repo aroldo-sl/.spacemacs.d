@@ -133,11 +133,23 @@ before packages are loaded."
    'dired-mode-hook
    '(lambda()(dired-hide-details-mode)))
   ;;; </dired>
-  ;;; <magit>
-  (define-prefix-command 'magit-)
-  (global-set-key [(f12) (\#)] magit-)
-  (global-set-key [(f12) (\#) (\#)] 'magit-status)
-  ;;; </magit>
+  ;;; <asl_/>
+  (define-prefix-command 'asl_/)
+  (global-set-key (kbd "<f12>") 'asl_/)
+  (defun asl_/hello()
+    "Says hello from asl_/"
+    (interactive)
+    (message "hello from asl_/"))
+  (global-set-key (kbd "<f12> h") 'asl_/hello)  ;; not "<f12>-h"
+  (defalias 'asl_/kill-emacs 'kill-emacs)
+  ;; "ESC-" is often intepreted as "M-" and vice-versa. 
+  (global-set-key (kbd "<f12> M-s") 'asl_/hello)  ;; not "<f12> M s"
+  (global-set-key (kbd "<f12> ESC-s") 'asl_/hello)  ;; not "<f12> ESC s"
+  (global-set-key (kbd "C-x M-s") 'asl_/hello)  ;; not "<f12> ESC s"
+  (defalias 'asl_/magit-status 'magit-status)
+  (global-set-key (kbd "<f12> m") 'asl_/magit-status)
+  (global-set-key (kbd "<f12> C-x k") 'asl_/kill-emacs) ;; not "<f12> C x k"
+  ;;; </ asl_/> 
   ;;; ;; <rst>
   (require 'rst)
   (define-key rst-mode-map [(f8) (a)]     'rst-adjust)
@@ -150,21 +162,6 @@ before packages are loaded."
   (define-key key-translation-map [(f5) (h)] [(control c) (\@) (control e)])
   ;;; ;; </hs>
   ;;; ;;
-  ;;; <asl__/>
-  (define-prefix-command 'asl__/)
-  (global-set-key (kbd "<f9>") 'asl__/)
-  (defun asl__/hello()
-    "Says hello from asl__/"
-    (interactive)
-    (message "hello from asl__/"))
-  (global-set-key (kbd "<f9> h") 'asl__/hello)  ;; not "<f9>-h"
-  (defalias 'asl__/kill-emacs 'kill-emacs)
-  ;; "ESC-" is often intepreted as "M-" and vice-versa. 
-  (global-set-key (kbd "<f9> M-s") 'asl__/hello)  ;; not "<f9> M s"
-  (global-set-key (kbd "<f9> ESC-s") 'asl__/hello)  ;; not "<f9> ESC s"
-  (global-set-key (kbd "C-x M-s") 'asl__/hello)  ;; not "<f9> ESC s"
-  (global-set-key (kbd "<f9> C-K") 'asl__/kill-emacs) ;; not "<f9> C K"
-  ;;; </ asl__/> 
 
 )
 (-user-config)
