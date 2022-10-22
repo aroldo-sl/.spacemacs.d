@@ -102,7 +102,6 @@ before packages are loaded."
   ;; (setq spacemacs-private-cache-directory
   ;;       (concat spacemacs-private-directory ".cache/"))
 
-
   ;;; ;; <asl/>
   ;;; ;; <aliases> 
   (defalias 'asl/magit-status  'magit-status)
