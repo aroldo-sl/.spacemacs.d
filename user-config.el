@@ -107,6 +107,9 @@ before packages are loaded."
   (defalias 'asl/magit-status  'magit-status)
   (defalias 'asl/quit-save     'save-buffers-kill-emacs)
   (defalias 'asl/quit-not-save 'kill-emacs)
+  ;; (defun asl/execute()
+  ;;     (interactive
+  ;;      (execute-extended-command nil)))
   ;;; ;; </aliases>
   ;;; ;; <keys>
   (define-prefix-command 'asl/)
@@ -116,6 +119,7 @@ before packages are loaded."
   (global-set-key (kbd "<f12> q") 'asl/quit-)
   (global-set-key (kbd "<f12> q q") 'asl/quit-save)
   (global-set-key (kbd "<f12> q Q") 'asl/quit-not-save)
+  ;; (global-set-key (kbd "<f12> <f12>") 'asl/execute)
   ;;; ;; </keys>
   ;;; ;; </ asl/> 
 
