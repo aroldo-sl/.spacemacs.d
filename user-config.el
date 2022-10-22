@@ -101,30 +101,54 @@ before packages are loaded."
   ;;       (concat spacemacs-private-directory "custom-settings.el"))
   ;; (setq spacemacs-private-cache-directory
   ;;       (concat spacemacs-private-directory ".cache/"))
+
+
+  ;;; ;; <asl/>
+  ;;; ;; <aliases> 
+  (defalias 'asl/magit-status  'magit-status)
+  (defalias 'asl/quit-save     'save-buffers-kill-emacs)
+  (defalias 'asl/quit-not-save 'kill-emacs)
+  ;;; ;; </aliases>
+  ;;; ;; <keys>
+  (define-prefix-command 'asl/)
+  (global-set-key (kbd "<f12>") 'asl/)
+  (global-set-key (kbd "<f12> \#") 'asl/magit-status)
+  (define-prefix-command 'asl/quit-)
+  (global-set-key (kbd "<f12> q") 'asl/quit-)
+  (global-set-key (kbd "<f12> q q") 'asl/quit-save)
+  (global-set-key (kbd "<f12> q Q") 'asl/quit-not-save)
+  ;;; ;; </keys>
+  ;;; ;; </ asl/> 
+
   ;;; <bookmark>
   (setq bookmark-directory
         (concat spacemacs-private-directory "bookmarks/"))
   (setq bookmark-default-file
         (concat bookmark-directory "default.bkm"))
   ;;; </bookmark>
+
   ;;; <recentf>
   (setq recentf-save-file
         (concat spacemacs-private-cache-directory "recentf"))
   ;;; </recentf>
+
   ;;; <xclip>
   (xclip-mode t)
   ;;; </xclip>
+
   ;;; <yasnippet>
   (setq yas-snippet-private-directory
         (concat spacemacs-private-directory "snippets/"))
   (add-to-list 'yas-snippet-dirs yas-snippet-private-directory)
   (global-set-key [(f12) (insertchar)] 'yas-insert-snippet)
   ;;; </yasnippet>
+
   ;;; <python>
   (add-hook
    'python-mode-hook
    '(lambda()(yas-minor-mode t)))
   ;;; </python>
+
   ;;; <dired>
   (add-hook
    'dired-mode-hook
@@ -133,23 +157,7 @@ before packages are loaded."
    'dired-mode-hook
    '(lambda()(dired-hide-details-mode)))
   ;;; </dired>
-  ;;; <asl_/>
-  (define-prefix-command 'asl_/)
-  (global-set-key (kbd "<f12>") 'asl_/)
-  (defun asl_/hello()
-    "Says hello from asl_/"
-    (interactive)
-    (message "hello from asl_/"))
-  (global-set-key (kbd "<f12> h") 'asl_/hello)  ;; not "<f12>-h"
-  (defalias 'asl_/kill-emacs 'kill-emacs)
-  ;; "ESC-" is often intepreted as "M-" and vice-versa. 
-  (global-set-key (kbd "<f12> M-s") 'asl_/hello)  ;; not "<f12> M s"
-  (global-set-key (kbd "<f12> ESC-s") 'asl_/hello)  ;; not "<f12> ESC s"
-  (global-set-key (kbd "C-x M-s") 'asl_/hello)  ;; not "<f12> ESC s"
-  (defalias 'asl_/magit-status 'magit-status)
-  (global-set-key (kbd "<f12> m") 'asl_/magit-status)
-  (global-set-key (kbd "<f12> C-x k") 'asl_/kill-emacs) ;; not "<f12> C x k"
-  ;;; </ asl_/> 
+
   ;;; ;; <rst>
   (require 'rst)
   (define-key rst-mode-map [(f8) (a)]     'rst-adjust)
@@ -158,6 +166,7 @@ before packages are loaded."
   (define-key rst-mode-map [(f8) (t)]     'rst-toc)
   (define-key rst-mode-map [(f8) (f8)]    'rst-compile)
   ;;; ;; </rst>
+
   ;;; ;; <hs>
   (define-key key-translation-map [(f5) (h)] [(control c) (\@) (control e)])
   ;;; ;; </hs>
@@ -165,5 +174,5 @@ before packages are loaded."
 
 )
 (-user-config)
-;;
+;;; ;;
 (message "end of %s" user-config_el)
