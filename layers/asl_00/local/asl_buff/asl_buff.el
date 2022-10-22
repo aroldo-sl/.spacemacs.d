@@ -54,6 +54,7 @@
 (defalias 'asl_buff/window-shrink-horizontally 'shrink-window-horizontally)
 (defalias 'asl_buff/window-split-horizontally 'split-window-horizontally)
 (defalias 'asl_buff/window-split-vertically 'split-window-vertically)
+(defalias 'asl_buff/recentf-open-files 'recentf-open-files)
 ;; ;;; </asl_buff-aliases>
 
 ;; ;;; <asl_buff-functions>
@@ -98,6 +99,7 @@
   (asl_buff/window-shrink-horizontally [(f5) (>)])
   (asl_buff/window-split-horizontally [(f5) (?3)])
   (asl_buff/window-split-vertically [(f5) (?2)])
+  (asl_buff/recentf-open-files [(f5) (f6)])
 )))
 (loop for (fn key) in bindings do (progn (global-set-key key fn))))
 ;; ;;; </als_buff-keys>

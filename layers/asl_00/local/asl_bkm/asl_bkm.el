@@ -33,11 +33,12 @@
 (global-set-key [(f6)] 'asl_bkm/)
 (let ((bindings '(
                   (asl_bkm/set               [(f6) (13)]) ;; 13=RET
-                  (asl_bkm/jump-helm         [(f6) (j)])
-                  (asl_bkm/jump              [(f6) (J)])
+                  (asl_bkm/jump-helm         [(f6) (f6)])
+                  (asl_bkm/jump              [(f6) (f5)])
+                  (asl_bkm/jump              [(f6) (j)])
                   (asl_bkm/list              [(f6) (l)])
                   )))
-  (loop for (fn key) in bindings do (progn
+  (cl-loop for (fn key) in bindings do (progn
                                          (global-set-key key fn))))
 ;; ;;; </bookmark-keys>
 
