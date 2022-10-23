@@ -108,6 +108,7 @@ before packages are loaded."
   (defalias 'asl/quit-save                                 'save-buffers-kill-emacs)
   (defalias 'asl/quit-not-save                             'kill-emacs)
   (defalias 'asl/helm-M-x-fuzzy-matching                   'spacemacs/helm-M-x-fuzzy-matching)
+  (defalias 'asl/repeat-complex-command                    'repeat-complex-command)
   ;;; ;; </aliases>
   ;;; ;; <keys>
   (define-prefix-command                                    'asl/)
@@ -118,6 +119,7 @@ before packages are loaded."
   (global-set-key (kbd "<f12> q")                           'asl/quit-)
   (global-set-key (kbd "<f12> q q")                         'asl/quit-save)
   (global-set-key (kbd "<f12> q Q")                         'asl/quit-not-save)
+  (global-set-key (kbd "C-<f12> <f36>")                     'asl/repeat-complex-command) ;; f36=C-<12>
   ;;; ;; </keys>
   ;;; ;; </ asl/> 
 
