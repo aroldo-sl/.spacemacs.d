@@ -33,6 +33,7 @@
   '(
     (asl_org   :location local)
     (asl_dired :location local)
+    (asl_rst   :location local)
     )
 
   "The list of Lisp packages required by the %LAYER_NAME% layer.
@@ -68,6 +69,9 @@ Each entry is either:
 
 (defun asl_f8/init-asl_dired()
   (use-package asl_dired))
+
+(defun asl_f8/init-asl_rst()
+  (use-package asl_rst))
 
 
 ;;; packages.el ends here

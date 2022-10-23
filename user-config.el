@@ -141,14 +141,14 @@ before packages are loaded."
    '(lambda()(dired-hide-details-mode)))
   ;;; </dired>
 
-  ;;; ;; <rst>
-  (require 'rst)
-  (define-key rst-mode-map [(f8) (a)]     'rst-adjust)
-  (define-key rst-mode-map [(f8) (down)]  'rst-forward-section)
-  (define-key rst-mode-map [(f8) (up)]    'rst-backward-section)
-  (define-key rst-mode-map [(f8) (t)]     'rst-toc)
-  (define-key rst-mode-map [(f8) (f8)]    'rst-compile)
-  ;;; ;; </rst>
+  ;; ;;; ;; <rst>
+  ;; (require 'rst)
+  ;; (define-key rst-mode-map [(f8) (a)]     'rst-adjust)
+  ;; (define-key rst-mode-map [(f8) (down)]  'rst-forward-section)
+  ;; (define-key rst-mode-map [(f8) (up)]    'rst-backward-section)
+  ;; (define-key rst-mode-map [(f8) (t)]     'rst-toc)
+  ;; (define-key rst-mode-map [(f8) (f8)]    'rst-compile)
+  ;; ;;; ;; </rst>
 
   ;;; ;; <hs>
   (define-key key-translation-map [(f5) (h)] [(control c) (\@) (control e)])
