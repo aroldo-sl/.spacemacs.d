@@ -55,7 +55,7 @@
                   (asl_find/replace-string [(f9) (z)])
                   (asl_find/replace-regexp [(f9) (Z)])
                   )))
-  (loop for (cmd key) in bindings do (global-set-key key cmd)))
+  (cl-loop for (cmd key) in bindings do (global-set-key key cmd)))
 ;; ;;; </asl_find-keys>
 
 ;; ;;; </asl_find-functions>

@@ -26,7 +26,7 @@ The default value of filename-ext is '.Trash'."
 	      (setq ext filename-ext))
 	  (let (
                 (marked-files (dired-get-marked-files)))
-               (loop  for filename on marked-files do  
+               (cl-loop  for filename on marked-files do  
                 (let* ((file-name (nth 0 filename))
                        (file-name-new (concat file-name ext)))
 		      (message "file name extension: %s" ext)
@@ -105,7 +105,7 @@ The default value of filename-ext is '.Trash'."
                    (asl_buff/window-split-horizontally [(?3)]             )
                    (asl_dired/do-delete  [(deletechar)]     )
   )))
-  (loop for (fn key) in bindings do (define-key keymap key fn)))
+  (cl-loop for (fn key) in bindings do (define-key keymap key fn)))
 ;; ;;; </asl_dired-keys>
 
 ;; ;;;

@@ -47,7 +47,7 @@
 ;;                   (asl_bc/next                [(f6) (f6) (next)])
 ;;                   (asl_bc/goto-current        [(f6) (f6) (?0)])
 ;;                   )))
-;;   (loop for (fn key) in bindings do (global-set-key key fn)))
+;;   (cl-loop for (fn key) in bindings do (global-set-key key fn)))
 ;; ;; ;;; </breadcrumb-keys>
 ;; ;; ;;; </breadcrumb>
 

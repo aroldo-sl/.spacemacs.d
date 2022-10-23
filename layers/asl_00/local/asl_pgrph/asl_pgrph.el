@@ -85,7 +85,7 @@
                   (asl_pgrph/repeat [(f7) (p) (?2)])
                   (asl_pgrph/transpose [(f7) (p) (t)])
                   )))
-  (loop for (cmd key) in bindings do (global-set-key key cmd))
+  (cl-loop for (cmd key) in bindings do (global-set-key key cmd))
   )
 ;; ;;; </asl_pgrph-keys>
 

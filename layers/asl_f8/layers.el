@@ -13,7 +13,7 @@
         asl_00
 	)
       )
-(loop for layer in asl_f8-layers/layers do
+(cl-loop for layer in asl_f8-layers/layers do
          (configuration-layer/declare-layer layer))
 
 

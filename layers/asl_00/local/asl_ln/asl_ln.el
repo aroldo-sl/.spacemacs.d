@@ -132,7 +132,7 @@
                   (asl_ln/mark [(f7) (m)])
                   (asl_ln/evaluate [(f7) (x)])
                   (asl_ln/word-transpose-words [(f7) (t)]))))
-  (loop for (cmd key) in bindings do (global-set-key key cmd)))
+  (cl-loop for (cmd key) in bindings do (global-set-key key cmd)))
 ;; ;;; </asl_ln-keys>
 
 ;; ;;;

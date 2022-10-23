@@ -67,7 +67,6 @@ This function should only modify configuration layer settings."
      asl_f8
      )
 
-
    ;; List of additional packages that will be installed without being wrapped
    ;; in a layer (generally the packages are installed only and should still be
    ;; loaded using load/require/use-package in the user-config section below in
@@ -536,8 +535,7 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
-  ;; Calling cl-loop causes a deprecation waring!
-  (defalias 'loop 'cl-loop)
+  ;;
   ;;
   (setq spacemacs-private-directory
         dotspacemacs-directory )

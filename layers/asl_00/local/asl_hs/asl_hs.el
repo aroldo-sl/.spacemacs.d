@@ -26,7 +26,7 @@
                   (asl_hs/show-all [(control f5) (A)])
                   (asl_hs/hide-all [(control f5) (a)])
                   )))
-  (loop for (cmd key) in bindings do (global-set-key key cmd)))
+  (cl-loop for (cmd key) in bindings do (global-set-key key cmd)))
 ;; ;;; </asl_hs-keys>
 
 ;; ;;; </asl_hs-functions>

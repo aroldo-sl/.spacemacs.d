@@ -37,7 +37,7 @@
                   (asl_rect/clear [(f7) (R) (\ )]  	          )
                   (asl_rect/string [(f7) (R) (s)]       	      )
                   )))
-  (loop for (cmd key) in bindings do (global-set-key key cmd)))
+  (cl-loop for (cmd key) in bindings do (global-set-key key cmd)))
 ;; ;;; </asl_rect-keys>
 
 ;; ;;;

@@ -77,7 +77,7 @@
     ("\e[3;2~"     [(shift delete)])
     ("\e[3;5~"     [(control delete)])
     )))
-  (loop for (gnome-key emacs-key) in bindings do
+  (cl-loop for (gnome-key emacs-key) in bindings do
            (define-key keymap gnome-key emacs-key))
   )
   ;; because Gnome uses f10:
@@ -104,22 +104,20 @@ before packages are loaded."
 
   ;;; ;; <asl/>
   ;;; ;; <aliases> 
-  (defalias 'asl/magit-status  'magit-status)
-  (defalias 'asl/quit-save     'save-buffers-kill-emacs)
-  (defalias 'asl/quit-not-save 'kill-emacs)
-  ;; (defun asl/execute()
-  ;;     (interactive
-  ;;      (execute-extended-command nil)))
+  (defalias 'asl/magit-status                              'magit-status)
+  (defalias 'asl/quit-save                                 'save-buffers-kill-emacs)
+  (defalias 'asl/quit-not-save                             'kill-emacs)
+  (defalias 'asl/helm-M-x-fuzzy-matching                   'spacemacs/helm-M-x-fuzzy-matching)
   ;;; ;; </aliases>
   ;;; ;; <keys>
-  (define-prefix-command 'asl/)
-  (global-set-key (kbd "<f12>") 'asl/)
-  (global-set-key (kbd "<f12> \#") 'asl/magit-status)
-  (define-prefix-command 'asl/quit-)
-  (global-set-key (kbd "<f12> q") 'asl/quit-)
-  (global-set-key (kbd "<f12> q q") 'asl/quit-save)
-  (global-set-key (kbd "<f12> q Q") 'asl/quit-not-save)
-  ;; (global-set-key (kbd "<f12> <f12>") 'asl/execute)
+  (define-prefix-command                                    'asl/)
+  (global-set-key (kbd "<f12>")                             'asl/)
+  (global-set-key (kbd "<f12> <f12>")                       'asl/helm-M-x-fuzzy-matching)
+  (global-set-key (kbd "<f12> \#")                          'asl/magit-status)
+  (define-prefix-command                                    'asl/quit-)
+  (global-set-key (kbd "<f12> q")                           'asl/quit-)
+  (global-set-key (kbd "<f12> q q")                         'asl/quit-save)
+  (global-set-key (kbd "<f12> q Q")                         'asl/quit-not-save)
   ;;; ;; </keys>
   ;;; ;; </ asl/> 
 

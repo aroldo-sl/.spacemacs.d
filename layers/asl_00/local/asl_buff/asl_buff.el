@@ -101,7 +101,7 @@
   (asl_buff/window-split-vertically [(f5) (?2)])
   (asl_buff/recentf-open-files [(f5) (f6)])
 )))
-(loop for (fn key) in bindings do (progn (global-set-key key fn))))
+(cl-loop for (fn key) in bindings do (progn (global-set-key key fn))))
 ;; ;;; </als_buff-keys>
 
 ;; ;;;

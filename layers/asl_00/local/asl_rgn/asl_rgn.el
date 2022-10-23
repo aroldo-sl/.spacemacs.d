@@ -88,7 +88,7 @@
                   (asl_rgn/shift-right [(f7) (r) (control i)]       )
                   (asl_rgn/shift-left [(f7) (r) (backtab)]         )
     )))
-  (loop for (cmd key) in bindings do (global-set-key key cmd)))
+  (cl-loop for (cmd key) in bindings do (global-set-key key cmd)))
 ;; ;;; </asl_rgn-keys>
 
 ;; ;;;

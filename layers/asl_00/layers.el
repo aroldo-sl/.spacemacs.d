@@ -8,6 +8,6 @@
 (setq asl_00-layers/layers
       '(spacemacs-evil
         auto-completion))
-(loop for layer in asl_00-layers/layers do
+(cl-loop for layer in asl_00-layers/layers do
               (configuration-layer/declare-layer layer))
 
