@@ -29,7 +29,7 @@
                    (asl_org/insert-heading-r-c [(f8) (13)]) ;; 13=RET
                    ))
        )
-  (loop for (fn key) in bindings do (progn 
+  (cl-loop for (fn key) in bindings do (progn 
                                          (define-key key-map key fn))))
 ;; ;;; </asl_org-keys>
 
