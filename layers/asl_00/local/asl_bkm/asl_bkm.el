@@ -42,35 +42,6 @@
                                          (global-set-key key fn))))
 ;; ;;; </bookmark-keys>
 
-;; ;; ;;; <breadcrumb>
-;; (require 'breadcrumb)
-;; ;; ;;; <breadcrumb-aliases>
-;; (defalias 'asl/bc-set 'bc-set)
-;; (defalias 'asl/bc-clear 'bc-clear)
-;; (defalias 'asl/bc-list 'bc-local-previous)
-;; (defalias 'asl/bc-previous 'bc-previous)
-;; (defalias 'asl/bc-local-next 'bc-local-next)
-;; (defalias 'asl/bc-next 'bc-next)
-;; (defalias 'asl/bc-goto-current 'bc-goto-current)
-;; ;; ;;; </breadcrumb-aliases>
-
-;; ;; ;;; <breadcrumb-keys>
-;; (define-prefix-command 'asl/bc-)
-;; (global-set-key [(f6) (f6)] 'asl/bc- )
-;; (let ((bindings '(
-;;                   (asl/bc-set                 [(f6) (f6) (control m)])
-;;                   (asl/bc-clear               [(f6) (f6) (deletechar)])
-;;                   (asl/bc-list                [(f6) (f6) (l)])
-;;                   (asl/bc-local-previous      [(f6) (f6) (up)])
-;;                   (asl/bc-previous            [(f6) (f6) (prior)])
-;;                   (asl/bc-local-next          [(f6) (f6) (down)])
-;;                   (asl/bc-next                [(f6) (f6) (next)])
-;;                   (asl/bc-goto-current        [(f6) (f6) (?0)])
-;;                   )))
-;;   (cl-loop for (fn key) in bindings do (global-set-key key fn)))
-;; ;; ;;; </breadcrumb-keys>
-;; ;; ;;; </breadcrumb>
-
 ;; ;;;
 (provide 'asl_bkm)
 ;; ;;;

@@ -30,6 +30,7 @@
 
 (defconst asl_00-packages
   '(
+    (asl_         :location local)
     (asl_buff     :location local)
     (asl_pgrph    :location local)
     (asl_bkm      :location local)
@@ -37,11 +38,6 @@
     (asl_rgn      :location local)
     (asl_rect     :location local)
     (asl_hs       :location local)
-    ;; (breadcrumb   :location (recipe
-    ;;                         :fetcher github
-    ;;                         :repo pheaver/breadcrumb))
-
-;;     (asl_bc       :location local)
     )
   "The list of Lisp packages required by the asl_00 layer.
 
@@ -70,6 +66,8 @@ Each entry is either:
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
+(defun asl_00/init-asl_()
+  (use-package asl_))
 
 (defun asl_00/init-asl_bkm()
   (use-package asl_bkm))

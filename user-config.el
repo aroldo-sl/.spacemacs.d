@@ -102,26 +102,6 @@ before packages are loaded."
   ;; (setq spacemacs-private-cache-directory
   ;;       (concat spacemacs-private-directory ".cache/"))
 
-  ;;; ;; <asl/>
-  ;;; ;; <aliases> 
-  (defalias 'asl/magit-status                              'magit-status)
-  (defalias 'asl/quit-save                                 'save-buffers-kill-emacs)
-  (defalias 'asl/quit-not-save                             'kill-emacs)
-  (defalias 'asl/helm-M-x-fuzzy-matching                   'spacemacs/helm-M-x-fuzzy-matching)
-  (defalias 'asl/repeat-complex-command                    'repeat-complex-command)
-  ;;; ;; </aliases>
-  ;;; ;; <keys>
-  (define-prefix-command                                    'asl/)
-  (global-set-key (kbd "<f12>")                             'asl/)
-  (global-set-key (kbd "<f12> <f12>")                       'asl/helm-M-x-fuzzy-matching)
-  (global-set-key (kbd "<f12> \#")                          'asl/magit-status)
-  (define-prefix-command                                    'asl/quit-)
-  (global-set-key (kbd "<f12> q")                           'asl/quit-)
-  (global-set-key (kbd "<f12> q q")                         'asl/quit-save)
-  (global-set-key (kbd "<f12> q Q")                         'asl/quit-not-save)
-  (global-set-key (kbd "C-<f12> <f36>")                     'asl/repeat-complex-command) ;; f36=C-<12>
-  ;;; ;; </keys>
-  ;;; ;; </ asl/> 
 
   ;;; <bookmark>
   (setq bookmark-directory
