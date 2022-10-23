@@ -16,7 +16,7 @@
 ;; ;;;
 
 ;; ;;; <asl_ln-functions>
-(defun asl_ln/mark()
+(defun asl/ln-mark()
  "Marks the current line.
   Uses 'set-mark', so that the other marks get lost."
  (interactive)
@@ -24,7 +24,7 @@
  (set-mark (point))
  (end-of-line nil))
 ;; ;;;
-(defun asl_ln/copy()
+(defun asl/ln-copy()
  "Copies the current line to the kill ring."
  (interactive)
  (setq start-point (point))
@@ -36,22 +36,22 @@
  (goto-char start-point)
  (message "copied line to kill ring"))
 ;; ;;;
-(defun asl_ln/repeat()
+(defun asl/ln-repeat()
  "Inserts a copy of the current line below it."
   (interactive)
-  (asl_ln/copy)
-  (asl_ln/end)
+  (asl/ln-copy)
+  (asl/ln-end)
   (newline)
   (yank))
 ;; ;;;
-(defun asl_ln/transpose-up()
+(defun asl/ln-transpose-up()
  "Transposes the current line and the previous one.
   see built-in function 'transpose-lines'"
   (interactive)
   (transpose-lines 1)
   (previous-line 2))
 ;; ;;;
-(defun asl_ln/transpose-down()
+(defun asl/ln-transpose-down()
  "Transposes the current line and the next one.
   see built-in function 'transpose-lines'"
   (interactive)
@@ -59,13 +59,13 @@
   (transpose-lines 1)
   (previous-line 1))
 ;; ;;;
-(defun asl_ln/split()
+(defun asl/ln-split()
  "Like the built-in split-line"
   (split-line 1)
   (interactive)
   (next-line 1))
 ;; ;;;
-(defun asl_ln/join()
+(defun asl/ln-join()
  "Join this line to previous and fix up whitespace at join.
   Leaves one space between the joined lines.
   Uses the built-in 'join-line'
@@ -73,7 +73,7 @@
   (interactive)
   (join-line nil))
 ;; ;;;
-(defun asl_ln/rtrim()
+(defun asl/ln-rtrim()
   "Trims the right side of the current line.
   ACHTUNG: if the line is not empty, a
   space is left before the newline charachter."
@@ -82,7 +82,7 @@
   (newline)
   (delete-indentation))
 ;; ;;;
-(defun asl_ln/evaluate()
+(defun asl/ln-evaluate()
    "Lisp-evaluates the line as a region."
    (interactive)
    (progn 
@@ -96,42 +96,42 @@
 ;; ;;; </asl_ln-functions>
 ;; ;;;
 ;; ;;; <asl_ln-aliases>
-(defalias  'asl_ln/kill                    'kill-whole-line)
-(defalias  'asl_ln/beginning               'beginning-of-line)
-(defalias  'asl_ln/end                     'end-of-line)
-(defalias  'asl_ln/linum-mode              'linum-mode)
-(defalias  'asl_ln/eval-last-sexp          'eval-last-sexp)
-(defalias  'asl_ln/word-transpose-words    'transpose-words)
-(defalias  'asl_ln/word-mark               'mark-word)
-(defalias  'asl_ln/word-kill               'kill-word)
-(defalias  'asl_ln/open                    'open-line)
-(defalias  'asl_ln/cycle-spacing           'cycle-spacing)
+(defalias  'asl/ln-kill                    'kill-whole-line)
+(defalias  'asl/ln-beginning               'beginning-of-line)
+(defalias  'asl/ln-end                     'end-of-line)
+(defalias  'asl/ln-linum-mode              'linum-mode)
+(defalias  'asl/ln-eval-last-sexp          'eval-last-sexp)
+(defalias  'asl/ln-word-transpose-words    'transpose-words)
+(defalias  'asl/ln-word-mark               'mark-word)
+(defalias  'asl/ln-word-kill               'kill-word)
+(defalias  'asl/ln-open                    'open-line)
+(defalias  'asl/ln-cycle-spacing           'cycle-spacing)
 ;; ;;; </asl_ln-aliases>
 
 ;; ;;; <asl_ln-keys>
-(define-prefix-command 'asl_ln/)
+(define-prefix-command 'asl/ln-)
 (let ((bindings '(
-                  (asl_ln/ [(f7)])
-                  (asl_ln/open [(f7) (o)])
-                  (asl_ln/kill [(f7) (k)])
-                  (asl_ln/cycle-spacing [(f7) (?\ )])
-                  (asl_ln/repeat [(f7) (?2)])
-                  (asl_ln/copy [(f7) (c)])
-                  (asl_ln/transpose-up [(f7) (up)])
-                  (asl_ln/transpose-down [(f7) (down)])
-                  (asl_ln/beginning [(f7) (left)])
-                  (asl_ln/beginning [(meta left)])
-                  (asl_ln/end [(f7) (right)])
-                  (asl_ln/end [(meta right)])
-                  (asl_ln/join [(f7) (j)])
-                  (asl_ln/split [(f7) (s)])
-                  (asl_ln/rtrim [(f7) (-)]) 
-                  (asl_ln/linum-mode [(f7) (n)])
-                  (asl_ln/word-mark [(f7) (w)])
-                  (asl_ln/word-kill [(f7) (deletechar)])
-                  (asl_ln/mark [(f7) (m)])
-                  (asl_ln/evaluate [(f7) (x)])
-                  (asl_ln/word-transpose-words [(f7) (t)]))))
+                  (asl/ln- [(f7)])
+                  (asl/ln-open [(f7) (o)])
+                  (asl/ln-kill [(f7) (k)])
+                  (asl/ln-cycle-spacing [(f7) (?\ )])
+                  (asl/ln-repeat [(f7) (?2)])
+                  (asl/ln-copy [(f7) (c)])
+                  (asl/ln-transpose-up [(f7) (up)])
+                  (asl/ln-transpose-down [(f7) (down)])
+                  (asl/ln-beginning [(f7) (left)])
+                  (asl/ln-beginning [(meta left)])
+                  (asl/ln-end [(f7) (right)])
+                  (asl/ln-end [(meta right)])
+                  (asl/ln-join [(f7) (j)])
+                  (asl/ln-split [(f7) (s)])
+                  (asl/ln-rtrim [(f7) (-)]) 
+                  (asl/ln-linum-mode [(f7) (n)])
+                  (asl/ln-word-mark [(f7) (w)])
+                  (asl/ln-word-kill [(f7) (deletechar)])
+                  (asl/ln-mark [(f7) (m)])
+                  (asl/ln-evaluate [(f7) (x)])
+                  (asl/ln-word-transpose-words [(f7) (t)]))))
   (cl-loop for (cmd key) in bindings do (global-set-key key cmd)))
 ;; ;;; </asl_ln-keys>
 

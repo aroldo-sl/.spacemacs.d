@@ -6,19 +6,19 @@
 ;; Keywords: find search replace query-replace
 
 ;; ;;;  <asl_find-aliases>
-(defalias 'asl_find/replace-string           'replace-string)
-(defalias 'asl_find/forward-string           'search-forward)
-(defalias 'asl_find/backward-string          'search-backward)
-(defalias 'asl_find/replace-regexp           'replace-regexp)
-(defalias 'asl_find/forward-regexp           'search-forward-regexp)
-(defalias 'asl_find/backward-regexp          'search-backward-regexp)
-(defalias 'asl_find/query-replace-string     'query-replace)
-(defalias 'asl_find/query-replace-regexp     'query-replace-regexp)
+(defalias 'asl/find-replace-string           'replace-string)
+(defalias 'asl/find-forward-string           'search-forward)
+(defalias 'asl/find-backward-string          'search-backward)
+(defalias 'asl/find-replace-regexp           'replace-regexp)
+(defalias 'asl/find-forward-regexp           'search-forward-regexp)
+(defalias 'asl/find-backward-regexp          'search-backward-regexp)
+(defalias 'asl/find-query-replace-string     'query-replace)
+(defalias 'asl/find-query-replace-regexp     'query-replace-regexp)
 ;; ;;; </asl_find--aliases>
 
 ;; ;;; <asl_find-functions>
 ;; ;;; Found in http://stackoverflow.com/questions/202803/searching-for-marked-selected-text-in-emacs:"
-(defun asl_find/region-text-isearch-forward (beg end)
+(defun asl/find-region-text-isearch-forward (beg end)
       "Searches for text from the selected region" 
       (interactive "r")
       (let (
@@ -29,7 +29,7 @@
         (goto-char (max beg end))
         (isearch-yank-string region)))
 ;; ;;;
-(defun asl_find/region-text-isearch-backward (beg end)
+(defun asl/find-region-text-isearch-backward (beg end)
       "Searches for text from the selected region backwards" 
       (interactive "r")
       (let (
@@ -41,19 +41,19 @@
         (isearch-yank-string region)))
 ;; ;;; </asl_find-functions>
 
-;; ;;; <asl_find/keys>
-(define-prefix-command              'asl_find/)
+;; ;;; <asl/find-keys>
+(define-prefix-command              'asl/find-)
 (let ((bindings '(
-                  (asl_find/ [(f9)])
-                  (asl_find/forward-string [(f9) (s)])
-                  (asl_find/forward-regexp [(f9) (S)])
-                  (asl_find/backward-string [(f9) (r)])
-                  (asl_find/backward-regexp [(f9) (R)])
-                  (asl_find/query-replace-string [(f9) (q)])
-                  (asl_find/query-replace-string [(f9) (f9)])
-                  (asl_find/query-replace-regexp [(f9) (Q)])
-                  (asl_find/replace-string [(f9) (z)])
-                  (asl_find/replace-regexp [(f9) (Z)])
+                  (asl/find- [(f9)])
+                  (asl/find-forward-string [(f9) (s)])
+                  (asl/find-forward-regexp [(f9) (S)])
+                  (asl/find-backward-string [(f9) (r)])
+                  (asl/find-backward-regexp [(f9) (R)])
+                  (asl/find-query-replace-string [(f9) (q)])
+                  (asl/find-query-replace-string [(f9) (f9)])
+                  (asl/find-query-replace-regexp [(f9) (Q)])
+                  (asl/find-replace-string [(f9) (z)])
+                  (asl/find-replace-regexp [(f9) (Z)])
                   )))
   (cl-loop for (cmd key) in bindings do (global-set-key key cmd)))
 ;; ;;; </asl_find-keys>

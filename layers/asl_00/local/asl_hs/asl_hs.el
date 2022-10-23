@@ -7,24 +7,24 @@
 (require 'hideshow)
 
 ;; ;;;  <asl_hs-aliases>
-(defalias 'asl_hs/show-all             'hs-show-all)
-(defalias 'asl_hs/hide-all             'hs-hide-all)
-(defalias 'asl_hs/show-block           'hs-show-block)
-(defalias 'asl_hs/hide-block           'hs-hide-block)
-(defalias 'asl_hs/hide-block-at-point  'hs-hide-block-at-point)
-(defalias 'asl_hs/toggle-hiding        'hs-toggle-hiding)
+(defalias 'asl/hs-show-all             'hs-show-all)
+(defalias 'asl/hs-hide-all             'hs-hide-all)
+(defalias 'asl/hs-show-block           'hs-show-block)
+(defalias 'asl/hs-hide-block           'hs-hide-block)
+(defalias 'asl/hs-hide-block-at-point  'hs-hide-block-at-point)
+(defalias 'asl/hs-toggle-hiding        'hs-toggle-hiding)
 ;; ;;; </asl_hs-aliases>
 
-;; ;;; <asl_hs/keys>
-(define-prefix-command  'asl_hs/)
+;; ;;; <asl/hs-keys>
+(define-prefix-command  'asl/hs-)
 (let ((bindings '(
-                  (asl_hs/ [(control f5)])
-                  (asl_hs/toggle-hiding [(control f5) (f5)])
-                  (asl_hs/hide-block-at-point [(control f5) (p)])
-                  (asl_hs/show-block [(control f5) (B)])
-                  (asl_hs/hide-block [(control f5) (b)])
-                  (asl_hs/show-all [(control f5) (A)])
-                  (asl_hs/hide-all [(control f5) (a)])
+                  (asl/hs- [(control f5)])
+                  (asl/hs-toggle-hiding [(control f5) (f5)])
+                  (asl/hs-hide-block-at-point [(control f5) (p)])
+                  (asl/hs-show-block [(control f5) (B)])
+                  (asl/hs-hide-block [(control f5) (b)])
+                  (asl/hs-show-all [(control f5) (A)])
+                  (asl/hs-hide-all [(control f5) (a)])
                   )))
   (cl-loop for (cmd key) in bindings do (global-set-key key cmd)))
 ;; ;;; </asl_hs-keys>

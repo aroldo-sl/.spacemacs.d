@@ -7,13 +7,13 @@
 ;; Keywords:
 
 
-(setq asl_f8-layers/layers
+(setq asl/f8-layers-layers
       '(
         org
         asl_00
 	)
       )
-(cl-loop for layer in asl_f8-layers/layers do
+(cl-loop for layer in asl/f8-layers-layers do
          (configuration-layer/declare-layer layer))
 
 
