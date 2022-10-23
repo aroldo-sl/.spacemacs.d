@@ -1,4 +1,4 @@
-#+TITLE: asl_00 layer
+#+TITLE: asl_f8 layer
 # Document tags are separated with "|" char
 # The example below contains 2 tags: "layer" and "web service"
 # Avaliable tags are listed in <spacemacs_root>/.ci/spacedoc-cfg.edn
@@ -16,7 +16,8 @@
 - [[#key-bindings][Key bindings]]
 
 * Description
-Tastaturkürzel für Funktionen mit globaler Geltung.
+Tastaturkürzel für Funktionen mit Geltung jeweils nur in einem Modus. Die Taste <f8> erhält dann
+in jedem Modus eine Bindung, die nur in diesem Modus gilt.
 
 
 ** Features:
