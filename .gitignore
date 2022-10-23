@@ -3,3 +3,4 @@ tmp
 *~
 #not working:# .cache
 /.cache/
+.spacemacs.env
