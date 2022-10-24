@@ -61,6 +61,7 @@ This function should only modify configuration layer settings."
      templates
      python
      json
+     html
      ;; ;; private layers
      asl_00
      asl_f8

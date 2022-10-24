@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("user-config.el"
+(("dig_spacemacs"
+ (filename . "~/.spacemacs.d/dig_spacemacs/")
+ (front-context-string . "cd_catalog.css\n ")
+ (rear-context-string . "72 Okt 24 10:14 ")
+ (position . 302))
+("user-config.el"
  (filename . "~/.spacemacs.d/user-config.el")
  (front-context-string . "  ;;; ;; </rst>\n")
  (rear-context-string . "  'rst-compile)\n")

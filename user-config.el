@@ -103,6 +103,11 @@ before packages are loaded."
   ;;       (concat spacemacs-private-directory ".cache/"))
 
 
+  ;;; <auto-mode-alist>
+  (add-to-list 'auto-mode-alist '("\\.html\\'" . html-mode))
+  (add-to-list 'auto-mode-alist '("\\.xml\\'" . nxml-mode))
+  ;;; </auto-mode-alist>
+
   ;;; <bookmark>
   (setq bookmark-directory
         (concat spacemacs-private-directory "bookmarks/"))
@@ -140,15 +145,6 @@ before packages are loaded."
    'dired-mode-hook
    '(lambda()(dired-hide-details-mode)))
   ;;; </dired>
-
-  ;; ;;; ;; <rst>
-  ;; (require 'rst)
-  ;; (define-key rst-mode-map [(f8) (a)]     'rst-adjust)
-  ;; (define-key rst-mode-map [(f8) (down)]  'rst-forward-section)
-  ;; (define-key rst-mode-map [(f8) (up)]    'rst-backward-section)
-  ;; (define-key rst-mode-map [(f8) (t)]     'rst-toc)
-  ;; (define-key rst-mode-map [(f8) (f8)]    'rst-compile)
-  ;; ;;; ;; </rst>
 
   ;;; ;; <hs>
   (define-key key-translation-map [(f5) (h)] [(control c) (\@) (control e)])
