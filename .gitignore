@@ -9,3 +9,4 @@ tmp
 #[Python]
 __pycache__
 *_log.py
+.ipython_log/
