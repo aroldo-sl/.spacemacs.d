@@ -4,8 +4,7 @@
 # @author: `(user-full-name)`
 # @description: 
 """
-Defines Formatter and Handler classes
-for a simple logger for local usage.
+${1:inline documentation of this module}
 """
 import os, sys, logging
 __level__ = logging.INFO
