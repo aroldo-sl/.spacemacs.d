@@ -9,7 +9,9 @@ for a simple logger for local usage.
 import os, sys, logging
 __level__ = logging.INFO
 
-######################### <_get_slog> ################################
+
+
+######################### <_get_slog>   #########
 def _get_slog ( level = __level__):
     "Wrapper for the get_slog function"
 
@@ -42,9 +44,11 @@ def _get_slog ( level = __level__):
         slog.setLevel(level)
         return slog
     return get_slog(level = level)
-############################### </_get_slog>  ###############################################
+######################### </_get_slog>  #########
 
 _slog = _get_slog(level = __level__)
+
+
 
 def _script():
     """
@@ -58,3 +62,8 @@ if __name__ == "__main__":
 
 
 
+
+# Local Variables:
+# buffer-read-only: t
+# eval: (hs-hide-all)
+# End:

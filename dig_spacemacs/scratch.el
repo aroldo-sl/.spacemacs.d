@@ -8,6 +8,12 @@
 (add-to-list 'auto-mode-alist '("\\.xml\\'" . nxml-mode))
 
 
+;; Local Variables: 
+;; buffer-read-only: t
+;; eval: (hs-hide-all)
+;; End:
+
+
 
 
 
