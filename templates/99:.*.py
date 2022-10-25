@@ -1,27 +1,56 @@
 #!/usr/bin/env python3
 # @file: `(current-buffer)`
-# @date: `(current-time-string)`
+# @date: `(format-time-string "%FT%T")`
+# @author: `(user-full-name)`
 # @description: 
 """
-Module docstring.
+Defines Formatter and Handler classes
+for a simple logger for local usage.
 """
-import logging
+import os, sys, logging
 __level__ = logging.INFO
-import os, sys
-def _make_slog():
-    strfmt = """%(levelname)s:%(name)s:%(module)s.%(funcName)s:%(lineno)s
-%(message)s"""
-    import random, string
-    logfmt = logging.Formatter(strfmt)
-    handler = logging.StreamHandler(stream=sys.stderr)
-    handler.setLevel(__level__)
-    handler.setFormatter(logfmt)
-    fmt_string = "".join(random.sample(string.ascii_letters, 4))
-    slog = logging.getLogger(__name__ + "-" + fmt_string)
-    slog.addHandler(handler)
-    slog.setLevel(__level__)
-    return slog
-_slog = _make_slog()
+
+
+
+######################### <_get_slog>   #########
+def _get_slog ( level = __level__):
+    "Wrapper for the get_slog function"
+
+    import  random, string
+
+    class SLogFormatter(logging.Formatter):
+        "A log formatter for SLogHandler"
+        fmt = "%(levelname)s:%(name)s:%(module)s.%(funcName)s:%(lineno)s\n%(message)s"
+        def __init__(self, fmt = None):
+            if fmt is None:
+                fmt = SLogFormatter.fmt
+            super().__init__(fmt = fmt)
+
+    class SLogHandler(logging.StreamHandler):
+        "Simple logging handler."
+        def __init__(self, stream = sys.stderr, level = __level__):
+            super().__init__(stream = stream)
+            self.setLevel(level)
+            self.setFormatter(SLogFormatter())
+
+    def get_slog(handler = None, level = __level__):
+        "Make a simple logger"
+        if handler is None:
+            handler = SLogHandler()
+        handler.setLevel(level)
+        random_string = "".join(random.sample(string.ascii_letters, 4))
+        log_name  = __name__ + "-" + random_string
+        slog = logging.getLogger(log_name)
+        slog.addHandler(handler)
+        slog.setLevel(level)
+        return slog
+    return get_slog(level = level)
+######################### </_get_slog>  #########
+
+_slog = _get_slog(level = __level__)
+
+## to unhide a code block got to the block top and press "<f5> h"
+$0
 
 
 def _script():
@@ -29,9 +58,17 @@ def _script():
     Runs if this module is called as a
     Python script.
     """
-    _slog.info("Running {script}".format(script=sys.argv[0]))
+    _slog.info("Perfect!")
 
 if __name__ == "__main__":
    _script()
 
-del _slog
+
+################### <yasnippets> ##########
+# yasnippet: `(asl/hs-hide-all)`
+# yasnippet: `(asl/buff-save)`
+# Local Variables:
+# buffer-read-only: nil
+# eval: (asl/hs-hide-all)
+# End:  
+################### </yasnippets> #########
