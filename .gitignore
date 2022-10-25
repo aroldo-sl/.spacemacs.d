@@ -1,7 +1,11 @@
 # aroldo-.spacemacs.d
+#[general]
 tmp
 *~
 /.cache/
 .spacemacs.env
 *.log
+
+#[Python]
+__pycache__
 *_log.py
