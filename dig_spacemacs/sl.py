@@ -6,14 +6,15 @@
 Defines Formatter and Handler classes
 for a simple logger for local usage.
 """
-import os, sys
-import logging, random, string
-from datetime import datetime
-from pathlib import Path
+import os, sys, logging
 __level__ = logging.INFO
 
 ######################### <_get_slog> ################################
 def _get_slog ( level = __level__):
+    "Wrapper for the get_slog function"
+
+    import  random, string
+
     class SLogFormatter(logging.Formatter):
         "A log formatter for SLogHandler"
         fmt = "%(levelname)s:%(name)s:%(module)s.%(funcName)s:%(lineno)s\n%(message)s"
@@ -35,13 +36,14 @@ def _get_slog ( level = __level__):
             handler = SLogHandler()
         handler.setLevel(level)
         random_string = "".join(random.sample(string.ascii_letters, 4))
-        log_name  = random_string
+        log_name  = __name__ + "-" + random_string
         slog = logging.getLogger(log_name)
         slog.addHandler(handler)
         slog.setLevel(level)
         return slog
     return get_slog(level = level)
 ############################### </_get_slog>  ###############################################
+
 _slog = _get_slog(level = __level__)
 
 def _script():
