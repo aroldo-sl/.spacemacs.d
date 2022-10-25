@@ -1,6 +1,7 @@
 # aroldo-.spacemacs.d
 tmp
 *~
-#not working:# .cache
 /.cache/
 .spacemacs.env
+*.log
+*_log.py
