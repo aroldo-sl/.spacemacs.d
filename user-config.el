@@ -129,6 +129,7 @@ before packages are loaded."
         (concat spacemacs-private-directory "snippets/"))
   (add-to-list 'yas-snippet-dirs yas-snippet-private-directory)
   (global-set-key [(f12) (insertchar)] 'yas-insert-snippet)
+  (yas-reload-all)
   ;;; </yasnippet>
 
   ;;; <python>

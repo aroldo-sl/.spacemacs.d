@@ -4,7 +4,7 @@
 # @author: `(user-full-name)`
 # @description: 
 """
-${1:inline documentation of this module (99:.\*.py)}
+${1:inline documentation of this module}
 """
 import os, sys, logging
 __level__ = logging.INFO
