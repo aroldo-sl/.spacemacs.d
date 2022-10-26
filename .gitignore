@@ -2,9 +2,9 @@
 #[general]
 tmp
 *~
-/.cache/
 .spacemacs.env
 *.log
+/.cache/recentf
 
 #[Python]
 __pycache__
