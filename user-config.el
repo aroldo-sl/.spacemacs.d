@@ -151,6 +151,10 @@ before packages are loaded."
   (define-key key-translation-map [(f5) (h)] [(control c) (\@) (control e)])
   ;;; ;; </hs>
   ;;; ;;
+  ;;; ;; <auto-save>
+  (setq spacemacs-auto-save-directory
+        (concat spacemacs-private-cache-directory "auto-save"))
+  ;;; ;; </auto-save>
 
 )
 (-user-config)
