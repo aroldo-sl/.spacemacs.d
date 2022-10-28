@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("scratch.el"
+(("backup"
+ (filename . "~/.spacemacs.d/backup/")
+ (front-context-string)
+ (rear-context-string . "Okt 28 15:16 ..\n")
+ (position . 152))
+("scratch.el"
  (filename . "~/.spacemacs.d/dig_spacemacs/scratch.el")
  (front-context-string . ";; Local Variabl")
  (rear-context-string . "\") 'greeting)\n\n\n")
