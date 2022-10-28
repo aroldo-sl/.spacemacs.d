@@ -1,6 +1,7 @@
-;; -*- mode: emacs-lisp; lexical-binding: t ; buffer-read-only: t -*-
+;; -*- mode: emacs-lisp; lexical-binding: t ; buffer-read-only: t; -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
+(message "Beginning of %s" "~/.spacemacs.d/init.el")
 
 (defun dotspacemacs/layers ()
   "Layer configuration:
@@ -560,3 +561,4 @@ before packages are loaded."
   (load-file user-config_el)
 )
 
+(message "End of %s" "~/.spacemacs.d/init.el")

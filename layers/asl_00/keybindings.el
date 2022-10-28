@@ -1,4 +1,4 @@
-;;; keybindings.el --- -*- buffer-read-only: t -*-
+;;; keybindings.el --- -*- buffer-read-only: t; -*-
 
 ;; Copyright 2020 Aroldo Souza-Leite
 ;;

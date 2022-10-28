@@ -1,9 +1,10 @@
-;;; user-config.el --- This is the sourced out dotspacemacs/user-config() in init.el (the dotspacemacs file)  -*- lexical-binding: t; buffer-read-only: t-*- 
+;;; user-config.el --- This is the sourced out dotspacemacs/user-config() in init.el (the dotspacemacs file)  -*- lexical-binding: t; buffer-read-only: t; -*- 
 
 ;; Copyright (C) 2021  Aroldo Souza-Leite
 
 ;; Author: Aroldo Souza-Leite <asouzaleige@gmx.de>
 ;; Keywords: dotspacemacs user-config
+(message "Beginning of %s" "~/.spacemacs.d/user-config.el")
 
 (defun -gnome-terminal-keys()
 ;; This is one of the crappiest things I've ever 
@@ -159,4 +160,4 @@ before packages are loaded."
 )
 (-user-config)
 ;;; ;;
-(message "end of %s" user-config_el)
+(message "End of %s" "~/.spacemacs.d/user-config.el")

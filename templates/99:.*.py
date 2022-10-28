@@ -63,11 +63,10 @@ if __name__ == "__main__":
    _script()
 
 
-################### <yasnippets> ##########
 # yasnippet: `(asl/hs-hide-all)`
 # yasnippet: `(asl/buff-save)`
 # Local Variables:
 # buffer-read-only: nil
 # eval: (asl/hs-hide-all)
-# End:  
-################### </yasnippets> #########
+# End:
+

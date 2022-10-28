@@ -1,4 +1,4 @@
-;;; asl_.el --- -*- buffer-read-only: t -*-
+;;; asl_.el --- -*- buffer-read-only: t; -*-
 
 ;; Copyright 2022 Aroldo Souza-Leite
 ;;
