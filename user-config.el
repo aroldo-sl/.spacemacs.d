@@ -136,16 +136,16 @@ before packages are loaded."
   ;;; <python>
   (add-hook
    'python-mode-hook
-   '(lambda()(yas-minor-mode t)))
+   (lambda()(yas-minor-mode t)))
   ;;; </python>
 
   ;;; <dired>
   (add-hook
    'dired-mode-hook
-   '(lambda()(setq dired-auto-revert-buffer t)))
+   (lambda()(setq dired-auto-revert-buffer t)))
   (add-hook
    'dired-mode-hook
-   '(lambda()(dired-hide-details-mode)))
+   (lambda()(dired-hide-details-mode)))
   ;;; </dired>
 
   ;;; ;; <hs>
