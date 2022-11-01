@@ -155,8 +155,9 @@ before packages are loaded."
   ;;; ;; <auto-save>
   (setq spacemacs-auto-save-directory
         (concat spacemacs-private-cache-directory "auto-save"))
+  ;;; ;; auto-save is a real mess:
+  (setq auto-save-default nil)
   ;;; ;; </auto-save>
-
 )
 (-user-config)
 ;;; ;;

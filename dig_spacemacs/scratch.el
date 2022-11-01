@@ -13,6 +13,8 @@
 (global-set-key (kbd "<f8> RET") 'greeting)
 
 
+
+
 ;; Local Variables: 
 ;; buffer-read-only: t
 ;; eval: (hs-hide-all)
