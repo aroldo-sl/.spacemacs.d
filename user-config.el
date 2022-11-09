@@ -130,6 +130,7 @@ before packages are loaded."
         (concat spacemacs-private-directory "snippets/"))
   (add-to-list 'yas-snippet-dirs yas-snippet-private-directory)
   (global-set-key [(f12) (insertchar)] 'yas-insert-snippet)
+  (global-set-key [(f12) (r)] 'yas-reload-all)
   (yas-reload-all)
   ;;; </yasnippet>
 
@@ -161,4 +162,4 @@ before packages are loaded."
 )
 (-user-config)
 ;;; ;;
-(message "End of %s" "~/.spacemacs.d/user-config.el")
+(message "End of %s" user-config_el)

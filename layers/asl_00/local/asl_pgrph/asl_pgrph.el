@@ -38,14 +38,14 @@
   (interactive)
   (progn
     (asl/pgrph-mark)
-    (region-comment (point) (mark))))
+    (asl/rgn-comment (point) (mark))))
 ;; ;;;
 (defun asl/pgrph-uncomment()
   "Uncomments the paragraph at point."
   (interactive)
   (progn
     (asl/pgrph-mark)
-    (region-uncomment (point) (mark))))
+    (asl/rgn-uncomment (point) (mark))))
 ;; ;;;
 (defun asl/pgrph-copy()
  "Copies the current paragraph to the kill ring."

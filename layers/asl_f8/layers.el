@@ -16,4 +16,5 @@
 (cl-loop for layer in asl/f8-layers-layers do
          (configuration-layer/declare-layer layer))
 
-
+(message "End of %s" "layers/asl_f8/layers.el")
+;; End of layers.el
