@@ -134,6 +134,10 @@ before packages are loaded."
   (yas-reload-all)
   ;;; </yasnippet>
 
+  ;;; <projectile>
+  (setq projectile-indexing-method 'native)
+  ;;; </projectile>
+
   ;;; <python>
   (add-hook
    'python-mode-hook
