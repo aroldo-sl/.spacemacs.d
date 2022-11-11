@@ -1,4 +1,4 @@
-;;; asl_find.el --- 	Adapted from the legacy asl-keys.el  -*- lexical-binding: t; buffer-read-only: t; -*-
+;;; asl_find.el --- 	Adapted from the legacy asl-keys.el  -*- lexical-binding: t; buffer-read-only: nil; -*-
 
 ;; Copyright (C) 2020  Aroldo Souza-Leite
 

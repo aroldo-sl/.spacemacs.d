@@ -1,4 +1,4 @@
-;;; asl_rgn.el --- 	region                           -*- lexical-binding: t; buffer-read-only: t; -*-
+;;; asl_rgn.el --- 	region                           -*- lexical-binding: t; buffer-read-only: nil; -*-
 
 ;; Copyright (C) 2020  Aroldo Souza-Leite
 

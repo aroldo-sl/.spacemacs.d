@@ -1,4 +1,4 @@
-;;; keybindings.el --- -*- buffer-read-only: t; -*-
+;;; keybindings.el --- -*- buffer-read-only: nil; -*-
 
 ;; Copyright 2020 Aroldo Souza-Leite
 ;;
@@ -7,7 +7,7 @@
 ;; X-URL: not distributed yet
 
 
-;; Key bindings for the layer asl_00.
+;; Key bindings for the layer asl_.
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation; either version 2, or (at your option)
@@ -38,5 +38,5 @@
 ;;; ;; </asl_/>
 
 ;; ;;;
-(message "end of .../layers/asl_00/keybindings.el")
+(message "end of .../layers/asl_/keybindings.el")
 ;; ;;; keybindings.el ends here

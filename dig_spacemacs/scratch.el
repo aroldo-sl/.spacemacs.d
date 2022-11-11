@@ -28,7 +28,6 @@
 
 
 ;; Local Variables: 
-;; buffer-read-only: t
 ;; eval: (hs-hide-all)
 ;; End:
 ;; (message "End of %s" (current-buffer))

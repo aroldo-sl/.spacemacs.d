@@ -1,4 +1,4 @@
-#+title: .spacemacs.d/snippes
+#+title: .spacemacs.d/snippets
 #+date: 2021-06-04T12-37-41
 #+author: aroldo
 #+email:  asouzaleite@gmx.de

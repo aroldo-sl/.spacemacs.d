@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("backup"
+(("snippets"
+ (filename . "~/.spacemacs.d/snippets/")
+ (front-context-string . "fundamental-mode")
+ (rear-context-string . "96 Nov  9 18:13 ")
+ (position . 262))
+("backup"
  (filename . "~/.spacemacs.d/backup/")
  (front-context-string)
  (rear-context-string . "Okt 28 15:16 ..\n")
@@ -59,7 +64,7 @@
  (position . 550))
 ("layers"
  (filename . "~/.spacemacs.d/layers/")
- (front-context-string . "asl_00\n  drwxrwx")
+ (front-context-string . "asl_\n  drwxrwx")
  (rear-context-string . "96 Jun  4 12:29 ")
  (position . 201))
 ("templates"

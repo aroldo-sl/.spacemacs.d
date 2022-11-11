@@ -1,4 +1,4 @@
-;;; asl_hs.el --- 	Adapted from asl_find.el  -*- lexical-binding: t; buffer-read-only: t; -*-
+;;; asl_hs.el --- 	Adapted from asl_find.el  -*- lexical-binding: t; buffer-read-only: nil; -*-
 
 ;; Copyright (C) 2022  Aroldo Souza-Leite
 

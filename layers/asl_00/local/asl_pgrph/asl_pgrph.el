@@ -1,4 +1,4 @@
-;;; asl_pgrph.el --- 	paragraph   -*- lexical-binding: t; buffer-read-only: t; -*-
+;;; asl_pgrph.el --- 	paragraph   -*- lexical-binding: t; buffer-read-only: nil; -*-
 
 ;; Copyright (C) 2020  Aroldo Souza-Leite
 

@@ -1,4 +1,4 @@
-;; -*- mode: emacs-lisp; lexical-binding: t ; buffer-read-only: t; -*-
+;; -*- mode: emacs-lisp; lexical-binding: t ; buffer-read-only: nil; -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
 (message "Beginning of %s" "~/.spacemacs.d/init.el")
@@ -64,7 +64,7 @@ This function should only modify configuration layer settings."
      json
      html
      ;; ;; private layers
-     asl_00
+     asl_
      asl_f8
      )
 

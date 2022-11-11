@@ -1,4 +1,4 @@
-;;; -*- buffer-read-only: t; -*-
+;;; -*- buffer-read-only: nil; -*-
 
 ;; Copyright 2020 Aroldo Souza-Leite
 ;;

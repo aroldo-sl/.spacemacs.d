@@ -1,4 +1,4 @@
-;;; packages.el --- asl_Küchenschrank layer packages file for Spacemacs.  -*- buffer-read-only: t; -*-
+;;; packages.el --- asl_Küchenschrank layer packages file for Spacemacs.  -*- buffer-read-only: nil; -*-
 ;;
 ;; Copyright (c) 2012-2018 Sylvain Benner & Contributors
 ;;

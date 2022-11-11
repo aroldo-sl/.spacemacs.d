@@ -1,4 +1,4 @@
-;;; user-config.el --- This is the sourced out dotspacemacs/user-config() in init.el (the dotspacemacs file)  -*- lexical-binding: t; buffer-read-only: t; -*- 
+;;; user-config.el --- This is the sourced out dotspacemacs/user-config() in init.el (the dotspacemacs file)  -*- lexical-binding: t; buffer-read-only: nil; -*- 
 
 ;; Copyright (C) 2021  Aroldo Souza-Leite
 

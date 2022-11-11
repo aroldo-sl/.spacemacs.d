@@ -1,4 +1,4 @@
-;; ;;; -*- lexical-binding: t; buffer-read-only: t; -*-
+;; ;;; -*- lexical-binding: t; buffer-read-only: nil; -*-
 ;;; layers.el --- 	Required Spacemacs layers for asl_f8.
 
 ;; Copyright (C) 2020  Aroldo Souza-Leite
