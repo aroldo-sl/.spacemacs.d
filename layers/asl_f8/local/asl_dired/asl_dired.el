@@ -57,7 +57,8 @@ The default value of filename-ext is '.Trash'."
   "Marks the latex compiler auxiliary files and pdf"
   (interactive)
   (progn (let ((garbage latex-garbage-regexp)) 
-          (dired-mark-files-regexp garbage))))
+
+           (dired-mark-files-regexp garbage))))
 ;; ;;;
 (defun asl/dired-mark-garbage()
   "Marks the files described in the variable 'dired-garbage-files-regexp'"
