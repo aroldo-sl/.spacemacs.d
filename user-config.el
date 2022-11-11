@@ -129,8 +129,6 @@ before packages are loaded."
   (setq yas-snippet-private-directory
         (concat spacemacs-private-directory "snippets/"))
   (add-to-list 'yas-snippet-dirs yas-snippet-private-directory)
-  (global-set-key [(f12) (insertchar)] 'yas-insert-snippet)
-  (global-set-key [(f12) (r)] 'yas-reload-all)
   (yas-reload-all)
   ;;; </yasnippet>
 

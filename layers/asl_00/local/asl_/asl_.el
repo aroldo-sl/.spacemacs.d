@@ -21,28 +21,24 @@
 ;; along with this program; if not, write to the Free Software
 ;; Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-  ;;; ;; <asl/>
-  ;;; ;; <aliases> 
-  (defalias 'asl/magit-status                              'magit-status)
-  (defalias 'asl/quit-save                                 'save-buffers-kill-emacs)
-  (defalias 'asl/quit-not-save                             'kill-emacs)
-  (defalias 'asl/helm-M-x-fuzzy-matching                   'spacemacs/helm-M-x-fuzzy-matching)
-  (defalias 'asl/repeat-complex-command                    'repeat-complex-command)
-  ;;; ;; </aliases>
-  ;;; ;; <keys>
-  (define-prefix-command                                    'asl/)
-  (global-set-key (kbd "<f12>")                             'asl/)
-  (global-set-key (kbd "<f12> <f12>")                       'asl/helm-M-x-fuzzy-matching)
-  (global-set-key (kbd "<f12> \#")                          'asl/magit-status)
-  (define-prefix-command                                    'asl/quit-)
-  (global-set-key (kbd "<f12> q")                           'asl/quit-)
-  (global-set-key (kbd "<f12> q q")                         'asl/quit-save)
-  (global-set-key (kbd "<f12> q Q")                         'asl/quit-not-save)
-  (global-set-key (kbd "C-<f12> <f36>")                     'asl/repeat-complex-command) ;; f36=C-<12>
-  ;;; ;; </keys>
-  ;;; ;; </ asl/> 
+;;; ;; <aliases> 
+(defalias 'asl_/helm-M-x-fuzzy-matching                   'spacemacs/helm-M-x-fuzzy-matching)
+(defalias 'asl_/repeat-complex-command                    'repeat-complex-command)
+(defalias 'asl_/magit-status                              'magit-status
+  "Jumps to the magit status window.")
+(defalias 'asl_/yas-reload-all                            'yas-reload-all
+  "Reloads all available snippets.
+ATTENTION: it takes some seconds to complete.")
+(defalias 'asl_/yas-insert-snippet                        'yas-insert-snippet)
+(defalias 'asl_/quit-save                                 'save-buffers-kill-emacs
+  "Asks if open buffers should be saved before  killing emacs")
+(defalias 'asl_/quit-not-save                             'kill-emacs
+  "Kills emacs without asking to save open buffers.")
+;;; ;; </aliases>
+
 
 ;; ;;;
 (provide 'asl_)
 ;; ;;;
+(message "end of .../layers/asl_00/local/asl_/asl_.el")
 ;; ;;; asl_.el ends here

@@ -24,5 +24,19 @@
 
 ;; ;;; Keybindings are in the respective packages.
 
+
+;;; ;; <asl_/>
+(global-set-key (kbd "<f12>")                              nil)
+(global-set-key (kbd "<f12> <f12>")                       'asl_/helm-M-x-fuzzy-matching)
+(global-set-key (kbd "C-<f12> <f36>")                     'asl_/repeat-complex-command) ;; f36=C-<12>
+(global-set-key (kbd "<f12> \#")                          'asl_/magit-status)
+(global-set-key [(f12) (r)]                               'asl_/yas-reload-all)
+(global-set-key [(f12) (insertchar)]                      'asl_/yas-insert-snippet)
+(global-set-key (kbd "<f12> q")                            nil)
+(global-set-key (kbd "<f12> q q")                         'asl_/quit-save)
+(global-set-key (kbd "<f12> q Q")                         'asl_/quit-not-save)
+;;; ;; </asl_/>
+
 ;; ;;;
+(message "end of .../layers/asl_00/keybindings.el")
 ;; ;;; keybindings.el ends here
