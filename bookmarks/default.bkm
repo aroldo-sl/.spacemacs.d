@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("snippets"
+(("Saxocharlie"
+ (filename . "~/Videos/Saxocharlie/")
+ (front-context-string . "opera_no_te_conf")
+ (rear-context-string . "96 Nov 16 14:59 ")
+ (position . 425))
+("snippets"
  (filename . "~/.spacemacs.d/snippets/")
  (front-context-string . "fundamental-mode")
  (rear-context-string . "96 Nov  9 18:13 ")
@@ -50,7 +55,7 @@
 ("sysadmin"
  (filename . "~/devel/sysadmin/")
  (front-context-string . ".git\n  -rw-rw-r-")
- (rear-context-string . "96 Okt 16 13:04 ")
+ (rear-context-string . "96 Nov  1 15:59 ")
  (position . 196))
 ("gui-examples"
  (filename . "~/devel/Stammheim/gui/")
