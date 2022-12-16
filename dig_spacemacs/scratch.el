@@ -19,6 +19,11 @@
 ;;   (message "a+b=%s" c)
 ;;   )
 
+(defun org-tell-if-checkbox()
+  "Tells if there is a checkbox in this line."
+  (interactive)
+  (message "%s" (org-at-item-checkbox-p)))
+
 
 (defun derived-mode-parents (mode)
   (and mode

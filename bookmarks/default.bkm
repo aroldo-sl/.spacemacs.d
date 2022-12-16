@@ -2,11 +2,16 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Saxocharlie"
+(("install-utils"
+ (filename . "~/devel/sysadmin/LM/install-utils/")
+ (front-context-string)
+ (rear-context-string . "96 Dez  4 18:24 ")
+ (position . 782))
+("Saxocharlie"
  (filename . "~/Videos/Saxocharlie/")
- (front-context-string . "opera_no_te_conf")
- (rear-context-string . "96 Nov 16 14:59 ")
- (position . 425))
+ (front-context-string)
+ (rear-context-string . "96 Dez  1 23:00 ")
+ (position . 197))
 ("snippets"
  (filename . "~/.spacemacs.d/snippets/")
  (front-context-string . "fundamental-mode")

@@ -19,6 +19,11 @@
   (interactive)
   (end-of-line)
   (org-meta-return))
+(defun asl/org-add-item()
+             (interactive)
+             (org-meta-return)
+             (org-meta-return))
+
 ;; ;;; </asl/org functions>
 
 
@@ -34,6 +39,7 @@
 (define-key org-mode-map (kbd "<f8> RET")            'asl/org-insert-heading-below) 
 (define-key org-mode-map (kbd "<f8> <S-up>")         'asl/org-section-up)
 (define-key org-mode-map (kbd "<f8> <S-down>")       'asl/org-section-down)
+(define-key org-mode-map (kbd "<f8> <S-RET>")        'asl/org-add-item)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;;; </asl/org keys>
 
