@@ -50,7 +50,8 @@ This function should only modify configuration layer settings."
      ;; lsp
      ;; markdown
      multiple-cursors
-     org
+     (org   :variables
+            org-enable-roam-support t)
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom
@@ -64,7 +65,7 @@ This function should only modify configuration layer settings."
      json
      html
      ;; ;; private layers
-     asl_
+     asl_00
      asl_f8
      )
 
