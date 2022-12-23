@@ -10,9 +10,9 @@
 (defalias 'asl/org-forward                       'org-forward-heading-same-level)
 (defalias 'asl/org-backward                      'org-backward-heading-same-level)
 (defalias 'asl/org-jump                          'org-goto)
-(defalias 'asl/org-insert-heading-r-c            'org-insert-heading-respect-content)
+(defalias 'asl/org-insert-heading-r-c            'org-insert-heading-respect-content) 
 (defalias 'asl/org-section-up   'org-metaup)
-(defalias 'asl/org-section-down   'org-metaup)
+(defalias 'asl/org-section-down   'org-metaup) 
 ;; ;;; </asl/org aliases>
 ;; ;;; <asl/org functions>
 (defun asl/org-insert-heading-below()
@@ -22,7 +22,8 @@
 (defun asl/org-add-item()
              (interactive)
              (org-meta-return)
-             (org-meta-return))
+             (org-meta-return)
+             )
 
 ;; ;;; </asl/org functions>
 
