@@ -143,6 +143,8 @@ before packages are loaded."
   ;;; </python>
 
   ;;; <dired>
+  (setq dired-garbage-files-regexp 
+        "\\(?:\\.\\(?:aux\\|bak\\|out\\|Trash\\|rubbish\\|DELETEME\\|DEPRECATED\\|dvi\\|log\\|orig\\|rej\\|toc\\)\\)\\'")
   (add-hook
    'dired-mode-hook
    (lambda()(setq dired-auto-revert-buffer t)))
