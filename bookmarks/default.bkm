@@ -2,26 +2,21 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("install-utils"
+(("org-roam"
+ (filename . "~/devel/org-roam/")
+ (front-context-string . "fine-literature\n")
+ (rear-context-string . "96 Mär  3 18:31 ")
+ (position . 367))
+("install-utils"
  (filename . "~/devel/sysadmin/LM/install-utils/")
  (front-context-string)
  (rear-context-string . "96 Dez  4 18:24 ")
  (position . 782))
-("Saxocharlie"
- (filename . "~/Videos/Saxocharlie/")
- (front-context-string)
- (rear-context-string . "96 Dez  1 23:00 ")
- (position . 197))
 ("snippets"
  (filename . "~/.spacemacs.d/snippets/")
  (front-context-string . "fundamental-mode")
  (rear-context-string . "96 Nov  9 18:13 ")
  (position . 262))
-("backup"
- (filename . "~/.spacemacs.d/backup/")
- (front-context-string)
- (rear-context-string . "Okt 28 15:16 ..\n")
- (position . 152))
 ("scratch.el"
  (filename . "~/.spacemacs.d/dig_spacemacs/scratch.el")
  (front-context-string . ";; Local Variabl")
@@ -52,21 +47,11 @@
  (front-context-string . "2021-07-21-lecks")
  (rear-context-string . "14 Jun  9 13:36 ")
  (position . 219))
-("jots-org"
- (filename . "~/devel/home-aroldo-dot/jots/.org/")
- (front-context-string . "suchmachinen.org")
- (rear-context-string . "01 Sep 26 20:08 ")
- (position . 210))
 ("sysadmin"
  (filename . "~/devel/sysadmin/")
  (front-context-string . ".git\n  -rw-rw-r-")
  (rear-context-string . "96 Nov  1 15:59 ")
  (position . 196))
-("gui-examples"
- (filename . "~/devel/Stammheim/gui/")
- (front-context-string . "pythongui.py\n  d")
- (rear-context-string . "29 Jul 26 16:01 ")
- (position . 148))
 ("about-org-mode"
  (filename . "~/devel/about-org-mode/")
  (front-context-string . "from-template.or")
@@ -97,26 +82,6 @@
  (front-context-string . ".cache\n  drwxrwx")
  (rear-context-string . "96 Mai 31 15:59 ")
  (position . 197))
-("Downloads"
- (filename . "~/Downloads/")
- (front-context-string . "50-F02_Antrag_Ko")
- (rear-context-string . "10 Mai 31 16:13 ")
- (position . 206))
-("Dokumente"
- (filename . "~/Dokumente/")
- (front-context-string . "Ausgabe.pdf\n  dr")
- (rear-context-string . "03 Okt 11 14:20 ")
- (position . 198))
-("download-batch.txt"
- (filename . "~/Videos/YT/download-batch.txt")
- (front-context-string)
- (rear-context-string . "h?v=zF_hoBORgdI\n")
- (position . 842))
-("YT"
- (filename . "~/Videos/YT/")
- (front-context-string . "Berlin_Live_2021")
- (rear-context-string . "96 Mai 25 22:35 ")
- (position . 192))
 ("init.el"
  (filename . "~/.spacemacs.d/init.el")
  (front-context-string . ")\n\n\n   ;; List o")
@@ -127,9 +92,4 @@
  (front-context-string . ".cache\n  drwxrwx")
  (rear-context-string . "96 Mai 31 16:17 ")
  (position . 197))
-("dotspace"
- (filename . "~/.spacemacs.d/")
- (front-context-string . "bookmarks\n  -rw-")
- (rear-context-string . "96 Mai 14 19:02 ")
- (position . 204))
 )

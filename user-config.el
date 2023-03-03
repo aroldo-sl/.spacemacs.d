@@ -163,6 +163,12 @@ before packages are loaded."
   ;;; ;; auto-save is a real mess:
   (setq auto-save-default nil)
   ;;; ;; </auto-save>
+
+  ;;; ;; <org-roam>
+  (setq org-roam-directory (file-truename "~/devel/org-roam"))
+  (make-directory org-roam-directory  t)
+  (org-roam-db-autosync-mode t)
+  ;;; ;; </org-roam>
 )
 (-user-config)
 ;;; ;;
