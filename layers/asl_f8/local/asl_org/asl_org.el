@@ -16,9 +16,9 @@
 (defalias 'asl/org-id-get-create                 'org-id-get-create
   "Inserts a property block and creates a node id.") 
 ;; ;;; <asl/org-roam aliases>
-(defalias 'asl/org-roam-node-find      'org-roam-node-find)
-(defalias 'asl/org-roam-node-capture   'org-roam-node-capture)
-(defalias 'asl/org-roam-node-insert    'org-roam-node-insert)
+(defalias 'asl/org-roam-node-find        'org-roam-node-find)
+(defalias 'asl/org-roam-capture          'org-roam-capture)
+(defalias 'asl/org-roam-node-insert     'org-roam-node-insert)
 ;; ;;; </asl/org-roam aliases>
 
 
@@ -48,7 +48,7 @@
 (define-prefix-command 'asl/org-roam-)
 (global-set-key (kbd "<f7> <f8>")                    'asl/org-roam-)
 (global-set-key (kbd "<f7> <f8> f")                  'asl/org-roam-node-find)
-(global-set-key (kbd "<f7> <f8> c")                  'asl/org-roam-node-capture)
+(global-set-key (kbd "<f7> <f8> c")                  'asl/org-roam-capture)
 (global-set-key (kbd "<f7> <f8> i")                  'asl/org-roam-node-insert)
 ;; ;;; </asl/org-roam keys>
 (define-key org-mode-map (kbd "<f8>")                'asl/org-)
