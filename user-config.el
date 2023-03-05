@@ -1,4 +1,5 @@
-;;; user-config.el --- This is the sourced out dotspacemacs/user-config() in init.el (the dotspacemacs file)  -*- lexical-binding: t; buffer-read-only: nil; -*- 
+;;; -*-  lexical-binding: t; buffer-read-only: t; -*-
+;;; user-config.el --- This is the sourced out dotspacemacs/user-config() in init.el (the dotspacemacs file)
 
 ;; Copyright (C) 2021  Aroldo Souza-Leite
 
@@ -165,7 +166,7 @@ before packages are loaded."
   ;;; ;; </auto-save>
 
   ;;; ;; <org-roam>
-  (setq org-roam-directory (file-truename "~/devel/org-roam"))
+  (setq org-roam-directory (file-truename "~/devel/Zettelkasten"))
   (make-directory org-roam-directory  t)
   (org-roam-db-autosync-mode t)
   ;;; ;; </org-roam>

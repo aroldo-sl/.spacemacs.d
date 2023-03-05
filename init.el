@@ -1,4 +1,4 @@
-;; -*- mode: emacs-lisp; lexical-binding: t ; buffer-read-only: nil; -*-
+;; -*- mode: emacs-lisp; lexical-binding: t ; buffer-read-only: t; -*-
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
 (message "Beginning of %s" "~/.spacemacs.d/init.el")
