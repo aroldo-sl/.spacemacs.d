@@ -120,6 +120,8 @@ before packages are loaded."
   ;;; <recentf>
   (setq recentf-save-file
         (concat spacemacs-private-cache-directory "recentf"))
+  (if (not (file-exists-p recentf-save-file))
+  (make-empty-file recentf-save-file t))
   ;;; </recentf>
 
   ;;; <xclip>
