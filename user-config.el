@@ -169,7 +169,8 @@ before packages are loaded."
 
   ;;; ;; <org-roam>
   (setq org-roam-directory (file-truename "~/devel/Zettelkasten"))
-  (make-directory org-roam-directory  t)
+  (if (not (file-exists-p org-roam-directory))
+  (make-directory org-roam-directory  t))
   (org-roam-db-autosync-mode t)
   ;;; ;; </org-roam>
 )
