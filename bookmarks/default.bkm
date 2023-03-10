@@ -8,10 +8,10 @@
  (rear-context-string . "Mär 10 15:15 ..\n")
  (position . 151))
 ("org-capture-last-stored"
- (filename . "~/devel/Zettelkasten/20230310152852-unutzes_wissen_1.org")
+ (filename . "~/devel/Zettelkasten/20230310162355-programming_languages.org")
  (front-context-string)
- (rear-context-string . "\n\n# END CONTENT\n")
- (position . 300))
+ (rear-context-string . ":\n# END CONTENT\n")
+ (position . 353))
 ("install-utils"
  (filename . "~/devel/sysadmin/LM/install-utils/")
  (front-context-string)

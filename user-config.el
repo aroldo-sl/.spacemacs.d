@@ -128,12 +128,12 @@ before packages are loaded."
   (xclip-mode t)
   ;;; </xclip>
 
-  ;;; <yasnippet>
-  (setq yas-snippet-private-directory
-        (concat spacemacs-private-directory "snippets/"))
-  (add-to-list 'yas-snippet-dirs yas-snippet-private-directory)
-  (yas-reload-all)
-  ;;; </yasnippet>
+  ;; ;;; <yasnippet>
+  ;; (setq yas-snippet-private-directory
+  ;;       (concat spacemacs-private-directory "snippets/"))
+  ;; (add-to-list 'yas-snippet-dirs yas-snippet-private-directory)
+  ;; (yas-reload-all)
+  ;; ;;; </yasnippet>
 
   ;;; <projectile>
   (setq projectile-indexing-method 'native)
@@ -169,6 +169,7 @@ before packages are loaded."
 
   ;;; ;; <org-roam>
   (setq org-roam-directory (file-truename "~/devel/Zettelkasten"))
+  (setq org-roam-db-location (concat spacemacs-private-directory "org-roam-db"))
   (if (not (file-exists-p org-roam-directory))
   (make-directory org-roam-directory  t))
   (org-roam-db-autosync-mode t)
