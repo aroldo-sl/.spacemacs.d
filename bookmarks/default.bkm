@@ -8,10 +8,10 @@
  (rear-context-string . "Mär 10 15:15 ..\n")
  (position . 151))
 ("org-capture-last-stored"
- (filename . "~/devel/Zettelkasten/20230310162355-programming_languages.org")
- (front-context-string)
- (rear-context-string . ":\n# END CONTENT\n")
- (position . 353))
+ (filename . "~/devel/Zettelkasten/20230310163210-emacs_lisp.org")
+ (front-context-string . "A really cool pr")
+ (rear-context-string . "tle: Emacs Lisp\n")
+ (position . 88))
 ("install-utils"
  (filename . "~/devel/sysadmin/LM/install-utils/")
  (front-context-string)
