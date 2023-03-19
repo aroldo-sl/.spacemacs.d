@@ -2,16 +2,21 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Zettelkasten"
+(("sound_utils"
+ (filename . "~/devel/sound_utils/")
+ (front-context-string . "music_cd_utils.p")
+ (rear-context-string . "81 Mär 13 11:35 ")
+ (position . 432))
+("Zettelkasten"
  (filename . "~/devel/Zettelkasten/")
  (front-context-string)
  (rear-context-string . "Mär 10 15:15 ..\n")
  (position . 151))
 ("org-capture-last-stored"
- (filename . "~/devel/Zettelkasten/20230310163210-emacs_lisp.org")
- (front-context-string . "A really cool pr")
- (rear-context-string . "tle: Emacs Lisp\n")
- (position . 88))
+ (filename . "~/devel/Zettelkasten/20230317161825-mail_provider.org")
+ (front-context-string)
+ (rear-context-string . "\n\n# END CONTENT\n")
+ (position . 323))
 ("install-utils"
  (filename . "~/devel/sysadmin/LM/install-utils/")
  (front-context-string)
@@ -39,9 +44,9 @@
  (position . 302))
 ("user-config.el"
  (filename . "~/.spacemacs.d/user-config.el")
- (front-context-string . "  ;;; ;; </rst>\n")
- (rear-context-string . "  'rst-compile)\n")
- (position . 4737))
+ (front-context-string . "\n  ;;; ;; </deft")
+ (rear-context-string . "ode 'org-mode)\n ")
+ (position . 5669))
 ("tmp"
  (filename . "~/tmp/")
  (front-context-string)

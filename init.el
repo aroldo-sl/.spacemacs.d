@@ -64,6 +64,7 @@ This function should only modify configuration layer settings."
      python
      json
      html
+     deft
      ;; ;; private layers
      asl_00
      asl_f8

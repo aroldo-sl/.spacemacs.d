@@ -174,6 +174,15 @@ before packages are loaded."
   (make-directory org-roam-directory  t))
   (org-roam-db-autosync-mode t)
   ;;; ;; </org-roam>
+
+  ;;; ;; <deft>
+  ;;; ;; from  https://jonathanchu.is/posts/setting-up-deft-mode-in-emacs-with-org-mode/
+ (setq deft-extension "org")
+ (setq deft-text-mode 'org-mode)
+ (setq deft-directory "~/devel/Zettelkasten")
+ (setq deft-use-filename-as-title t)
+ (setq deft-recursive t)
+ ;;; ;; </deft>
 )
 (-user-config)
 ;;; ;;

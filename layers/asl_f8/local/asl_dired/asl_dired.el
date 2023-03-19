@@ -14,6 +14,8 @@
 (defalias 'asl/dired-wdired-mode           'wdired-change-to-wdired-mode)
 (defalias 'asl/dired-eww-open-file         'eww-open-file)
 (defalias 'asl/dired-do-delete             'dired-do-delete)
+(defalias 'asl/dired-toggle-read-only       'dired-toggle-read-only)
+
 ;; ;;; </dired-aliases>
 
 ;; ;;; <dired-functions>
@@ -105,6 +107,7 @@ The default value of filename-ext is '.Trash'."
                    (asl/buff-window-split-vertically [(?2)]             )
                    (asl/buff-window-split-horizontally [(?3)]             )
                    (asl/dired-do-delete  [(deletechar)]     )
+                   (asl/dired-toggle-read-only [(control x) (control q)])
   )))
   (cl-loop for (fn key) in bindings do (define-key keymap key fn)))
 ;; ;;; </asl_dired-keys>
