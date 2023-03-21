@@ -65,6 +65,7 @@ This function should only modify configuration layer settings."
      json
      html
      deft
+     yaml
      ;; ;; private layers
      asl_00
      asl_f8
