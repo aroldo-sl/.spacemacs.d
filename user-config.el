@@ -183,6 +183,11 @@ before packages are loaded."
  (setq deft-use-filename-as-title t)
  (setq deft-recursive t)
  ;;; ;; </deft>
+
+ ;;; ;; <krempelkiste>
+ (let ((krempelkiste (concat spacemacs-private-directory "krempelkiste.el")))
+   (message "Krempelkiste:%s" krempelkiste)
+   (load-file krempelkiste))
 )
 (-user-config)
 ;;; ;;

@@ -58,13 +58,13 @@
  (copy-region-as-kill beg end)
  (goto-char start-point)
  (message "copied paragraph to kill ring"))
-;; ;;;
-(defun asl/pgrph-repeat()
-  (interactive)
-  (progn (asl/pgrph-copy)
-	 (forward-paragraph)
-	 (yank)
-         (backward-paragraph)))
+;; ;;; BUGGY:
+;; (defun asl/pgrph-repeat()
+;;   (interactive)
+;;   (progn (asl/pgrph-copy)
+;; 	 (forward-paragraph)
+;; 	 (yank)
+;;          (backward-paragraph)))
 ;; ;;; </asl_pgrph-functions>
 
 ;; ;;; <asl_pgrph-keys>
@@ -82,7 +82,7 @@
                   (asl/pgrph-backward [(f7) (p) (up)])
                   (asl/pgrph-mark [(f7) (p) (m)])
                   (asl/pgrph-copy [(f7) (p) (c)])
-                  (asl/pgrph-repeat [(f7) (p) (?2)])
+                  ;; (asl/pgrph-repeat [(f7) (p) (?2)])
                   (asl/pgrph-transpose [(f7) (p) (t)])
                   )))
   (cl-loop for (cmd key) in bindings do (global-set-key key cmd))

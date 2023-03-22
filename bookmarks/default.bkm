@@ -27,11 +27,6 @@
  (front-context-string . "fundamental-mode")
  (rear-context-string . "96 Nov  9 18:13 ")
  (position . 262))
-("scratch.el"
- (filename . "~/.spacemacs.d/dig_spacemacs/scratch.el")
- (front-context-string . ";; Local Variabl")
- (rear-context-string . "\") 'greeting)\n\n\n")
- (position . 357))
 ("asl_org.el"
  (filename . "~/.spacemacs.d/layers/asl_f8/local/asl_org/asl_org.el")
  (front-context-string)
