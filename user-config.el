@@ -137,6 +137,8 @@ before packages are loaded."
 
   ;;; <projectile>
   (setq projectile-indexing-method 'native)
+  (projectile-mode)
+  (bind-key (kbd "<f12> p") projectile-command-map)
   ;;; </projectile>
 
   ;;; <python>

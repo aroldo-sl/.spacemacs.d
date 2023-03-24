@@ -2,7 +2,22 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("sound_utils"
+(("process_track_folders.py"
+ (filename . "~/devel/sound_utils/process_track_folders.py")
+ (front-context-string . "\n\n##############")
+ (rear-context-string . "= logging.INFO\n\n")
+ (position . 311))
+("octo-Musiksammlung"
+ (filename . "~/Musik/octo-Musiksammlung/")
+ (front-context-string . "HL\n  drwxr-xr-x ")
+ (rear-context-string . "96 Mär 19 22:13 ")
+ (position . 430))
+("music_cd_utils.py"
+ (filename . "~/devel/sound_utils/music_cd_utils.py")
+ (front-context-string . "():\n    name = \"")
+ (rear-context-string . "ckName_BadString")
+ (position . 3038))
+("sound_utils"
  (filename . "~/devel/sound_utils/")
  (front-context-string . "music_cd_utils.p")
  (rear-context-string . "81 Mär 13 11:35 ")
