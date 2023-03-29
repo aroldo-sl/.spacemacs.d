@@ -61,11 +61,13 @@ This function should only modify configuration layer settings."
      ;; version-control
      treemacs
      templates
-     python
+     python 
      json
      html
      deft
      yaml
+     rust
+     toml
      ;; ;; private layers
      asl_00
      asl_f8

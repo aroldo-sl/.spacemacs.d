@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("process_track_folders.py"
+(("site-packages"
+ (filename . "~/.local/pyaro/lib/python3.8/site-packages/")
+ (front-context-string . "mutagen\n  drwxrw")
+ (rear-context-string . "96 Nov 15 05:04 ")
+ (position . 6830))
+("pyaro"
+ (filename . "~/.local/pyaro/")
+ (front-context-string . "lib\n  drwxr-xr-x")
+ (rear-context-string . "96 Okt 16 10:53 ")
+ (position . 351))
+("process_track_folders.py"
  (filename . "~/devel/sound_utils/process_track_folders.py")
  (front-context-string . "\n\n##############")
  (rear-context-string . "= logging.INFO\n\n")
