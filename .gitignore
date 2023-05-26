@@ -5,7 +5,7 @@ tmp
 .spacemacs.env
 *.log
 /.cache/recentf
-
+org-roam-db
 #[Python]
 __pycache__
 *_log.py
