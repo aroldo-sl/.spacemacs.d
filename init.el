@@ -41,6 +41,7 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      ;; auto-completion
      ;; better-defaults
+     ;; rust ;; buggy
      emacs-lisp
      (git :variables
           git-magit-status-fullscreen t
@@ -66,7 +67,6 @@ This function should only modify configuration layer settings."
      html
      deft
      yaml
-     rust
      toml
      ;; ;; private layers
      asl_00
