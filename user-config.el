@@ -108,6 +108,7 @@ before packages are loaded."
   ;;; <auto-mode-alist>
   (add-to-list 'auto-mode-alist '("\\.html\\'" . html-mode))
   (add-to-list 'auto-mode-alist '("\\.xml\\'" . nxml-mode))
+  (add-to-list 'auto-mode-alist '("\\.description\\'" . text-mode))
   ;;; </auto-mode-alist>
 
   ;;; <bookmark>

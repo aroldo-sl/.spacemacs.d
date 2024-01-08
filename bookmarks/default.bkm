@@ -2,7 +2,19 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("site-packages"
+((".config"
+ (filename . "~/.config/")
+ (front-context-string . "evolution\n  drwx")
+ (rear-context-string . "96 Okt 15  2022 ")
+ (position . 979)
+ (last-modified 25986 54600 789376 68000))
+("yt-dlp"
+ (filename . "~/.config/yt-dlp/")
+ (front-context-string . "batch-file.txt\n ")
+ (rear-context-string . "84 Okt 27 12:06 ")
+ (position . 199)
+ (last-modified 25918 13199 535039 141000))
+("site-packages"
  (filename . "~/.local/pyaro/lib/python3.8/site-packages/")
  (front-context-string . "mutagen\n  drwxrw")
  (rear-context-string . "96 Nov 15 05:04 ")
