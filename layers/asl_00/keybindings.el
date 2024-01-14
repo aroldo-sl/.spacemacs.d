@@ -35,6 +35,7 @@
 (global-set-key (kbd "<f12> q")                            nil)
 (global-set-key (kbd "<f12> q q")                         'asl_/quit-save)
 (global-set-key (kbd "<f12> q Q")                         'asl_/quit-not-save)
+(global-set-key (kbd "<f12> Q Q")                         'asl_/server-force-delete)
 ;;; ;; </asl_/>
 
 ;; ;;;

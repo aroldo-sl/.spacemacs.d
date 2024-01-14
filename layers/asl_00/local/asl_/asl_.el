@@ -31,9 +31,11 @@
 ATTENTION: it takes some seconds to complete.")
 (defalias 'asl_/yas-insert-snippet                        'yas-insert-snippet)
 (defalias 'asl_/quit-save                                 'save-buffers-kill-emacs
-  "Asks if open buffers should be saved before  killing emacs")
+  "Asks if open buffers should be saved before  killing Emacs")
 (defalias 'asl_/quit-not-save                             'kill-emacs
-  "Kills emacs without asking to save open buffers.")
+  "Kills Emacs without asking to save open buffers.")
+(defalias 'asl_/server-force-delete                       'server-force-delete
+  "Kills Emacs and kills the Emacs.")
 ;;; ;; </aliases>
 
 
