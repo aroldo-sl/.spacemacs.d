@@ -60,8 +60,8 @@ This function should only modify configuration layer settings."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
-     sqlite3
-     libsqlite3
+     (beframe
+      :ensure t)
      treemacs
      templates
      python 
@@ -69,7 +69,6 @@ This function should only modify configuration layer settings."
      html
      deft
      yaml
-     toml
      ;; ;; private layers
      asl_00
      asl_f8
@@ -85,6 +84,11 @@ This function should only modify configuration layer settings."
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages '(xclip
                                       multi-term
+                                      (beframe
+                                       :ensure t)
+                                      sqlite3 
+                                      libsqlite3 
+                                      toml 
                                       ;; yasnippet
                                       ;; yasnippet-snippets
                                       )
