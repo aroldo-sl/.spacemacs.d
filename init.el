@@ -87,7 +87,7 @@ This function should only modify configuration layer settings."
                                       (beframe
                                        :ensure t)
                                       sqlite3 
-                                      libsqlite3 
+                                      ;;libsqlite3 
                                       toml 
                                       ;; yasnippet
                                       ;; yasnippet-snippets
